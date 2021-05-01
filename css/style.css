@@ -2,19 +2,20 @@
 	margin: 0;
 	padding: 0;
 }
-body{
+.body{
 	font-family: 'Shippori Mincho B1', serif;
 	background-color: #c2c040;
 
 
 }
-h1{
+
+.h1{
 	font-family: 'Shippori Mincho B1', serif;
 	font-weight: bold;
 	text-align: center;
 
 }
-h2{
+.h2{
 	font-family: 'Shippori Mincho B1', serif;
 	margin-top: 10px;
 	margin-left: 10px;
@@ -24,14 +25,14 @@ h2{
 
 }
 
-h3{
+.h3{
 	font-family: 'Shippori Mincho B1', serif;
 	margin-top: 10px;
 	margin-bottom: 50px;
 	justify-content: left;
 }
 
-h4{
+.h4{
 	font-family: 'Shippori Mincho B1', serif;
 	margin-top: 10px;
 	margin-bottom: 50px;
@@ -45,8 +46,8 @@ a{
 .grid{
 	display: grid;
 	grid-template-rows: auto ;
-    grid-template-columns: auto ;
-    grid-template-areas:"menu content ." ". content ." "footer footer footer";
+    grid-template-columns: 12.5% 31.75% 31.75% 25% ;
+    grid-template-areas:"menu content content ." ". content content ." "footer footer footer footer";
 }
 .divFooter{
 	margin-top: 50px;
@@ -94,6 +95,10 @@ a{
 	grid-area: content;
 
 
+}
+
+.mainContainer p{
+	text-align: left;
 }
 
 .menuImage{
@@ -583,12 +588,17 @@ color: red
 
 }
 
+.menuTitle{
+	border-style: solid;
+	border-color: black;
+	width: 155px;
+}
 .menuItem{
 
-	border-top-color: black;
+	border-color: black;
 	width: 155px;
 	display: block;
-	border-top-style: solid;
+	border-style: solid;
 	position: inherit;
 	transition: background-color 1s
 
@@ -618,6 +628,10 @@ color: red
   color: #818181;
   display: block;
   transition: 0.3s;
+
+}
+.menuIndex{
+	  font-weight: bold
 }
 
 .menuLink:hover{
@@ -643,12 +657,17 @@ color: red
 	justify-content: left;
 	overflow: auto;
 	margin-right: 50px;
+	margin-left: 10%;
 	justify-content: left;
 	border-style: solid;
 	border-color: black;
 	border-width: thick;
-	transition: background-color 2s
+	transition: background-color 0.3s
 
+}
+
+.gridListaUnidades a{
+	font-weight: bold
 }
 
 .listaUnidades{
@@ -736,6 +755,3 @@ grid-area: content;
 }
 
 
-.video{
-	padding: 75px 
-}

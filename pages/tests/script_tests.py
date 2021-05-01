@@ -3,7 +3,7 @@ import numpy as np
 import os, sys
 import re
 
-path = "C:/Users/masou/Documents/CoderHouse/Unidad 2/mi sitio-Souto/tables"
+path = "C:/Users/masou/Documents/CoderHouse/DW/MikeEmpiresPage-Souto/tables"
 files = os.listdir(path)
 exceptions = ['Reports', 'Best','Worst' ,'generador_paginas.py']
 files = [i for i in files if i not in exceptions]
@@ -32,11 +32,12 @@ for i,j in zip(unit_names,files):
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">\n\
 	<link rel="preconnect" href="https://fonts.gstatic.com">\n\
 	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">\n\
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">\n\
+	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">\n\
 	<link rel="stylesheet" href="../../css/style.css">\n\
 	<title>'+h1+'</title>\n\
 	</head>\n\
-	<body>\n\
-		<h1>'+h1+'</h1>\n\
+	<body class="body">\n\
 			<header>\n\
 				<div class= menuImage>\n\
 					<nav class="menuMenu">\n\
@@ -56,38 +57,35 @@ for i,j in zip(unit_names,files):
 						</ul>\n\
 					</nav> </div>\n\
 				</header>\n\
+				<h1 class="h1">'+h1+'</h1>\n\
 				<div class= "grid">\n\
-				<nav class="menuNav">\n\
-					<h2>\n\
-						<i>Menu</i>\n\
-					</h2>\n\
-					<ul class= "menuLista">\n\
-						<li class= "menuItem">\n\
-							<a class= "menuIndex" href="../civilizations.html">Civilizations</a>\n\
-						</li>\n\
-					</ul>\n\
-					<li class= "menuItem">\n\
-						<a class= "menuIndex" href="../units.html">Units</a>\n\
-					</li>\n\
-					<li class= "menuItem">\n\
-						<a class= "menuIndex" href="../matchups.html">Matchups</a>\n\
-					</li>\n\
-					<li class= "menuItem">\n\
-						<a class= "menuIndex" href="../tests.html">Tests</a>\n\
-					</li>\n\
-				</ul>\n\
-				</nav>\n\
+				<nav class="dropleft ">\n\
+				      <ul class= "dropleft ">\n\
+				        <li class="menuTitle"><h2 class="h2">Menu</h2></li>\n\
+				        <li class= "menuItem">\n\
+				          <a class= "menuIndex" href="../civilizations.html">Civilizations</a>\n\
+				        </li>\n\
+				        <li class= "menuItem">\n\
+				          <a class= "menuIndex" href="../units.html">Units</a>\n\
+				        </li>\n\
+				        <li class= "menuItem">\n\
+				          <a class= "menuIndex" href="../matchups.html">Matchups</a>\n\
+				        </li>\n\
+				        <li class= "menuItem">\n\
+				          <a class= "menuIndex" href="../tests.html">Tests</a>\n\
+				        </li>\n\
+				      </ul>\n\
+				    </nav>\n\
 				<div class="mainContainer">\n\
-				<h3><u>'+h1+'</u></h3>\
-					<iframe width="600" height="400" src="'+url+'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>\
+				<iframe width="600" height="400" src="'+url+'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>\
 				</iframe>\n\
-				<h4><u>Results</u></h4>\n'\
+				<h4 class="h4"><u>Results</u></h4>\n'\
 				+tabla+'\n\
 				</div>\n\
 				</div>\n\
 				<div class=divFooter>\n\
 					<footer id= "footer">\n\
-						<h3>Send us an email</h3>\n\
+						<h3 class="h3">Send us an email</h3>\n\
 						<p>Select your country</p>\n\
 						<form action="">\n\
 						 <div class="selectTextArea">\n\
@@ -99,7 +97,7 @@ for i,j in zip(unit_names,files):
 							<textarea rows="5" cols="40">\n\
 							</textarea>\n\
 						</div>\n\
-							<h4>Are you a patron/channel member?</h4>\n\
+							<h4 class="h4">Are you a patron/channel member?</h4>\n\
 							<div id = "ButtonRadius">\n\
 							<div>Yes</div>\n\
 							<input type="radio" name="patron" value="yes" />\n\
@@ -113,6 +111,9 @@ for i,j in zip(unit_names,files):
 						</form>\n\
 					</footer>\n\
 				</div>\n\
+			  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>\n\
+			  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>\n\
+			  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>\n\
 			</body>\n\
 			</html>'
 		)

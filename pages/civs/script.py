@@ -14,11 +14,12 @@ for i in civs:
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">\n\
 	<link rel="preconnect" href="https://fonts.gstatic.com">\n\
 	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">\n\
+	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">\n\
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">\n\
 	<link rel="stylesheet" href="../../css/style.css">\n\
 	<title>'+h1+'</title>\n\
 	</head>\n\
-	<body>\n\
-		<h1>'+h1+'</h1>\n\
+	<body class ="body">\n\
 			<header>\n\
 				<div class= menuImage>\n\
 					<nav class="menuMenu">\n\
@@ -38,26 +39,24 @@ for i in civs:
 						</ul>\n\
 					</nav> </div>\n\
 				</header>\n\
+				<h1 class="h1">'+h1+'</h1>\n\
 				<div class= "grid">\n\
-				<nav class="menuNav">\n\
-					<h2>\n\
-						<i>Menu</i>\n\
-					</h2>\n\
-					<ul class= "menuLista">\n\
+				<nav class="dropleft ">\n\
+					<ul class= "dropleft ">\n\
+						<li class="menuTitle"><h2 class="h2">Menu</h2></li>\n\
 						<li class= "menuItem">\n\
 							<a class= "menuIndex" href="../civilizations.html">Civilizations</a>\n\
 						</li>\n\
+						<li class= "menuItem">\n\
+							<a class= "menuIndex" href="../units.html">Units</a>\n\
+						</li>\n\
+						<li class= "menuItem">\n\
+							<a class= "menuIndex" href="../matchups.html">Matchups</a>\n\
+						</li>\n\
+						<li class= "menuItem">\n\
+							<a class= "menuIndex" href="../tests.html">Tests</a>\n\
+						</li>\n\
 					</ul>\n\
-					<li class= "menuItem">\n\
-						<a class= "menuIndex" href="../units.html">Units</a>\n\
-					</li>\n\
-					<li class= "menuItem">\n\
-						<a class= "menuIndex" href="../matchups.html">Matchups</a>\n\
-					</li>\n\
-					<li class= "menuItem">\n\
-						<a class= "menuIndex" href="../tests.html">Tests</a>\n\
-					</li>\n\
-				</ul>\n\
 				</nav>\n\
 				<div class="mainContainer">\n\
 					<p>Info sobre la civ correspondiente</p>\n\
@@ -77,7 +76,7 @@ for i in civs:
 				</div>\n\
 				<div class=divFooter>\n\
 					<footer id= "footer">\n\
-						<h3>Send us an email</h3>\n\
+						<h3 class="h3">Send us an email</h3>\n\
 						<p>Select your country</p>\n\
 						<form action="">\n\
 						 <div class="selectTextArea">\n\
@@ -89,7 +88,7 @@ for i in civs:
 							<textarea rows="5" cols="40">\n\
 							</textarea>\n\
 						</div>\n\
-							<h4>Are you a patron/channel member?</h4>\n\
+							<h4 class="h4">Are you a patron/channel member?</h4>\n\
 							<div id = "ButtonRadius">\n\
 							<div>Yes</div>\n\
 							<input type="radio" name="patron" value="yes" />\n\
