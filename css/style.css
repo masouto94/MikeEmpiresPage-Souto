@@ -1,757 +1,685 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-.body{
-	font-family: 'Shippori Mincho B1', serif;
-	background-color: #c2c040;
+.divFooter {
+  margin-top: 50px;
+  margin-left: 10px;
+  display: block;
+  grid-area: footer;
+  border-top-style: dashed;
+  border-top-width: thin;
+  position: relative;
+  display: flex; }
 
-
-}
-
-.h1{
-	font-family: 'Shippori Mincho B1', serif;
-	font-weight: bold;
-	text-align: center;
-
-}
-.h2{
-	font-family: 'Shippori Mincho B1', serif;
-	margin-top: 10px;
-	margin-left: 10px;
-	margin-bottom: 50px;
-	text-align:  left;
-	grid-area:titulo;
-
-}
-
-.h3{
-	font-family: 'Shippori Mincho B1', serif;
-	margin-top: 10px;
-	margin-bottom: 50px;
-	justify-content: left;
-}
-
-.h4{
-	font-family: 'Shippori Mincho B1', serif;
-	margin-top: 10px;
-	margin-bottom: 50px;
-	justify-content: left;
-}
-
-a{
-	text-decoration: none;
-}
-
-.grid{
-	display: grid;
-	grid-template-rows: auto ;
-    grid-template-columns: 12.5% 31.75% 31.75% 25% ;
-    grid-template-areas:"menu content content ." ". content content ." "footer footer footer footer";
-}
-.divFooter{
-	margin-top: 50px;
-	margin-left: 10px;
-	display: block;
-	grid-area: footer;
-	border-top-style: dashed;
-	border-top-width: thin;
-	position: relative;
-	display: flex;
-
-}
 .selectTextArea {
-	display: flex;
-	flex-direction: column;
-	vertical-align: top;
-	margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  vertical-align: top;
+  margin-bottom: 20px; }
 
-}
-.selectTextArea textarea{
-	margin-top: 10px
-}
+.selectTextArea textarea {
+  margin-top: 10px; }
 
-#ButtonRadius{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	margin-bottom: 10px
+#ButtonRadius {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 10px; }
 
-}
+#No {
+  margin-left: 20px; }
 
-#No{
-	margin-left: 20px
-}
+#Reset {
+  margin-left: 20px; }
 
-#Reset{
-	margin-left: 20px
-}
+/*Grilla general */
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 12.5% 31.75% 31.75% 25%;
+  grid-template-areas: "menu content content ." ". content content ." "footer footer footer footer"; }
 
-.mainContainer{
-	margin: 10px 5px 10px 0;
-	padding-left: 10px;
-	padding-top: 10px;
-	text-align: center;
-	grid-area: content;
+.gridCiv {
+  display: grid;
+  grid-template-columns: repeat(10, 150px);
+  grid-template-rows: repeat(4, 100px);
+  grid-template-areas: " 1 1 1 1 1 1 1 1 1 1" " 2 2 2 2 2 2 2 2 2 2" " 3 3 3 3 3 3 3 3 3 3" " 4 4 4 4 4 4 4 4 4 4";
+  justify-content: left;
+  margin: 10px;
+  overflow: auto; }
 
+.gridCiv li {
+  transition: background-color 1s;
+  font-weight: bold;
+  color: #0057E9; }
 
-}
+.gridCiv li:hover {
+  background-color: #fb8500; }
 
-.mainContainer p{
-	text-align: left;
-}
+.AztecsIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-.menuImage{
-	background-image: url(../media/background.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 200px;
-	display: flex;
+.BerbersIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-	
+.BritonsIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-/*	background-attachment: fixed*/
+.BulgariansIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
+.BurgundiansIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
+.BurmeseIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
+.ByzantinesIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-/*	background-color: #9cb7a3
-	opacity: 0.8;*/
+.CeltsIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-}
-.menuMenu{
-	display: inline-block;
-/*	position: absolute;
-	right: 50%*/
-	vertical-align: middle;
-	margin-left: 80px;
+.ChineseIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
+.CumansIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-}
-.itemIndex{
-	display: inline-block;
-	vertical-align: bottom;
-	width: auto ;
-    margin-top: 70px;
-    padding: 100px 100px 0px 100px;
-/*	text-align: justify-all;*/
+.EthiopiansIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
+.FranksIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-}
+.GothsIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-.linkIndex,.linkNav {
-	color: black;
-	font-weight: bold;
-	border-style: outset;
-	border-width: thick;
-	border-color: #585503a8;
-	background-color: yellow;
-	display: inline;
+.HunsIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
+.IncasIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
+.IndiansIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-}
-/*.linkNav {
-	color: black;
-	font-weight: bold;
-	border-style: solid;
-	border-width: thick;
-	border-color: gray;
-	background-color: yellow;
-	display: inline-block;
+.ItaliansIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-}*/
-.linkIndex:hover{
-text-decoration: underline;
-color: red
-}
+.JapaneseIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-.menuListaBox{
-	border: 5px;
-	margin-top: 10px;
-	width: 155px;
+.KhmerIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-	position: relative;
-	display: flex;
-}
-.menuNav{
-	margin-top:10px;
-	margin-bottom:10px;
-	width: 155px;
-	border-style: solid;
-	border-color: black;
-	float: right;
-	background-color: #f7d15e;
-	display: block;
+.KoreansIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-}
+.LithuaniansIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-.gridCiv{
-	display: grid;
-	grid-template-columns: repeat(10, 150px);
-	grid-template-rows: repeat(4, 100px);
-	grid-template-areas:" 1 1 1 1 1 1 1 1 1 1"
-						" 2 2 2 2 2 2 2 2 2 2"
-						" 3 3 3 3 3 3 3 3 3 3"
-						" 4 4 4 4 4 4 4 4 4 4";
-	justify-content: left;
-	margin: 10px;
-	overflow: auto
-}
+.MagyarsIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-.gridCiv li{
- transition: background-color 1s
-}
+.MalayIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-.gridCiv li:hover{
-	background-color: #ffb703
-}
+.MaliansIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-.AztecsIcon{
-	list-style: none;
-	grid-area: 1;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px;
-}
-.BerbersIcon{
-	list-style: none;
-	grid-area: 1;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px;	
-}
-.BritonsIcon{
-	list-style: none;
-	grid-area: 1;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px;	
-}
-.BulgariansIcon{
-	list-style: none;
-	grid-area: 1;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px;
-}
-.BurgundiansIcon{
-	list-style: none;
-	grid-area: 1;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px;
-}
-.BurmeseIcon{
-	list-style: none;
-	grid-area: 1;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px;
-}
-.ByzantinesIcon{
-	list-style: none;
-	grid-area: 1;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px;
-}
-.CeltsIcon{
-	list-style: none;
-	grid-area: 1;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px;
-}
-.ChineseIcon{
-	list-style: none;
-	grid-area: 1;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px;
-}
-.CumansIcon{
-	list-style: none;
-	grid-area: 1;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px;
-}
-.EthiopiansIcon{
-	list-style: none;
-	grid-area: 2;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px;
-}
-.FranksIcon{
-	list-style: none;
-	grid-area: 2;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px	
-}
-.GothsIcon{
-	list-style: none;
-	grid-area: 2;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.HunsIcon{
-	list-style: none;
-	grid-area: 2;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.IncasIcon{
-	list-style: none;
-	grid-area: 2;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.IndiansIcon{
-	list-style: none;
-	grid-area: 2;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.ItaliansIcon{
-	list-style: none;
-	grid-area: 2;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.JapaneseIcon{
-	list-style: none;
-	grid-area: 2;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.KhmerIcon{
-	list-style: none;
-	grid-area: 2;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.KoreansIcon{
-	list-style: none;
-	grid-area: 2;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.LithuaniansIcon{
-	list-style: none;
-	grid-area: 3;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.MagyarsIcon{
-	list-style: none;
-	grid-area: 3;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px	
-}
-.MalayIcon{
-	list-style: none;
-	grid-area: 3;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.MaliansIcon{
-	list-style: none;
-	grid-area: 3;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.MayansIcon{
-	list-style: none;
-	grid-area: 3;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.MongolsIcon{
-	list-style: none;
-	grid-area: 3;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.PersiansIcon{
-	list-style: none;
-	grid-area: 3;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.PortugueseIcon{
-	list-style: none;
-	grid-area: 3;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.SaracensIcon{
-	list-style: none;
-	grid-area: 3;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.SiciliansIcon{
-	list-style: none;
-	grid-area: 3;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.SlavsIcon{
-	list-style: none;
-	grid-area: 4;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.SpanishIcon{
-	list-style: none;
-	grid-area: 4;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px	
-}
-.TatarsIcon{
-	list-style: none;
-	grid-area: 4;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.TeutonsIcon{
-	list-style: none;
-	grid-area: 4;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.TurksIcon{
-	list-style: none;
-	grid-area: 4;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.VietnameseIcon{
-	list-style: none;
-	grid-area: 4;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.VikingsIcon{
-	list-style: none;
-	grid-area: 4;
-	text-align: center;
-		border: 5px;
-	border-width: 5px;
-	border-color: black;
-	border-style: double;
-	margin: 2px
-}
-.menuCivs{
-	width: 150px;
-	border-width: 1px;
-	display: block;
-	border-style: solid;
-	border:1px;	
-	border-color: black;
+.MayansIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-}
+.MongolsIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-.menuTitle{
-	border-style: solid;
-	border-color: black;
-	width: 155px;
-}
-.menuItem{
+.PersiansIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-	border-color: black;
-	width: 155px;
-	display: block;
-	border-style: solid;
-	position: inherit;
-	transition: background-color 1s
+.PortugueseIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-}
+.SaracensIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-.menuItem:hover{
-	background-color:#fb8500;
-}
-/*.menuLista{
-  height: 100%;
-  width: 0;
-  position: relative; 
-  z-index: 1; 
-  left: 0;
+.SiciliansIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
 
-  background-color: #111; 
-  overflow-x: hidden; 
-  padding-top: 60px;
-  transition: 0.5s; 
-}
-*/
-/* The navigation menu links */
+.SlavsIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
+
+.SpanishIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
+
+.TatarsIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
+
+.TeutonsIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
+
+.TurksIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
+
+.VietnameseIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
+
+.VikingsIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #fee134;
+  margin: 2px; }
+
+.gridListaUnidades {
+  display: grid;
+  grid-template-areas: "a a a a a";
+  grid-auto-rows: auto;
+  grid-area: content;
+  justify-content: left;
+  overflow: auto;
+  margin-right: 50px;
+  margin-left: 10%;
+  justify-content: left;
+  border-style: solid;
+  border-color: black;
+  border-width: thick; }
+
+.gridListaUnidades a {
+  font-weight: bold;
+  color: #0057E9; }
+
+.menuImage {
+  background-image: url(../media/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  display: flex; }
+
+.menuMenu {
+  display: flex;
+  vertical-align: middle;
+  margin-left: 80px; }
+
+.itemIndex {
+  display: inline-flex;
+  vertical-align: bottom;
+  width: auto;
+  margin-top: 70px;
+  padding: 100px 100px 0px 100px; }
+
+.linkIndex, .linkNav {
+  color: black;
+  font-weight: bold;
+  border-style: outset;
+  border-width: thick;
+  border-color: #585503a8;
+  background-color: yellow;
+  display: inline; }
+
+.linkIndex:hover {
+  text-decoration: underline;
+  color: red; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.body {
+  font-family: "Shippori Mincho B1", serif;
+  background-color: #c2c040; }
+
+.h1 {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: bold;
+  text-align: center; }
+
+.h2 {
+  font-family: "Shippori Mincho B1", serif;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  text-align: left;
+  grid-area: titulo; }
+
+.h3 {
+  font-family: "Shippori Mincho B1", serif;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  justify-content: left; }
+
+.h4 {
+  font-family: "Shippori Mincho B1", serif;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  justify-content: left; }
+
+.mainContainer {
+  margin: 10px 5px 10px 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  text-align: center;
+  grid-area: content; }
+
+.mainContainer p {
+  text-align: left; }
+
+.menuListaBox {
+  border: 5px;
+  margin-top: 10px;
+  width: 155px;
+  position: relative;
+  display: flex; }
+
+.menuNav {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 155px;
+  border-style: solid;
+  border-color: black;
+  float: right;
+  background-color: #f7d15e;
+  display: block; }
+
+.menuCivs {
+  width: 150px;
+  border-width: 1px;
+  display: block;
+  border-style: solid;
+  border: 1px;
+  border-color: black; }
+
+.menuTitle {
+  border-style: solid;
+  border-color: black;
+  background-color: #fee134;
+  width: 155px; }
+
+.menuItem {
+  border-color: black;
+  width: 155px;
+  display: block;
+  border-style: solid;
+  position: inherit;
+  background-color: #fee134;
+  transition: background-color 1s; }
+
+.menuItem:hover {
+  background-color: #fb8500; }
+
 .menuLink a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  transition: 0.3s; }
 
-}
-.menuIndex{
-	  font-weight: bold
-}
+.menuIndex {
+  font-weight: bold;
+  color: #0057E9; }
 
-.menuLink:hover{
-text-decoration: underline;
-color: red
-}
+.menuLink:hover {
+  text-decoration: underline;
+  color: red; }
 
-.linkNav:hover{
-text-decoration: underline;
-color: red
-}
-.linkActivo{
-text-decoration: underline;
-color: red
-}
+.linkNav:hover {
+  text-decoration: underline;
+  color: red; }
 
+.linkActivo {
+  text-decoration: underline;
+  color: red; }
 
-.gridListaUnidades{
-	display: grid;
-	grid-template-areas: "a a a a a";
-	grid-auto-rows: auto;
-	grid-area: content;
-	justify-content: left;
-	overflow: auto;
-	margin-right: 50px;
-	margin-left: 10%;
-	justify-content: left;
-	border-style: solid;
-	border-color: black;
-	border-width: thick;
-	transition: background-color 0.3s
+.listaUnidades {
+  padding: 5px;
+  border: 10px;
+  margin: 0;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  align-items: center;
+  transition: background-color 1s; }
 
-}
+.listaUnidades:hover {
+  background-color: #fb8500; }
 
-.gridListaUnidades a{
-	font-weight: bold
-}
+.listaUnidades {
+  text-align: left; }
 
-.listaUnidades{
-	padding: 5px;
-	border:10px;
-	margin: 0;
-	border-style: solid;
-	border-color: black;
-	border-width: thin;
-	align-items: center
+.tablaResultados {
+  border-style: solid;
+  border-width: thick;
+  margin-top: 50px;
+  grid-area: content;
+  width: 100%;
+  text-align: center; }
 
-}
+.tablaResultados th {
+  border-style: double;
+  border-width: thin; }
 
-li.listaUnidades:hover{
-	background-color: #ffb703
+.tablaResultados td {
+  border-style: double;
+  border-width: 0 thin thin thin; }
 
-}
+.listasReporte {
+  border-style: double;
+  border-width: thin;
+  margin: 20px;
+  list-style: square;
+  grid-area: content;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  list-style: none;
+  list-style-type: none; }
 
-li.listaUnidades{
-	text-align: left;
+.unitComparator {
+  border-style: solid;
+  border-width: thick;
+  margin: 50px 50px;
+  grid-area: content;
+  width: 100%;
+  justify-content: center; }
 
-}
-.tablaResultados{
-border-style: solid;
-border-width: thick;
-margin-top: 50px;
-grid-area: content;
-width: 100%;
-text-align: center;
+.unitComparator th {
+  border-bottom-style: double;
+  border-bottom-width: thin; }
 
-
-
-}
-
-.tablaResultados th{
-
-	border-style: double;
-	border-width: thin;
-
-	
-}
-.tablaResultados td{
-
-	border-style: double;
-	border-width: 0 thin thin thin;
-	
-}
-.listasReporte{
-border-style: double;
-border-width: thin;
-margin: 20px;	
-list-style: square;
-grid-area: content;
-display: flex;
-flex-wrap: nowrap;
-flex-direction: column;
-list-style: none;
-list-style-type: none;
-
-}
-
-.unitComparator{
-border-style: solid;
-border-width: thick;
-margin: auto;	
-width: auto;
-grid-area: content;
-
-
-}
-
-
-.unitComparator th{
-
-	border-bottom-style: double;
-	border-bottom-width: thin;
-
-	
-}
-.unitComparator td{
-
-	border-style: double;
-	border-width: 0 thin thin thin;
-	
-}
-
-
+.unitComparator td {
+  border-style: double;
+  border-width: 0 thin thin thin; }
