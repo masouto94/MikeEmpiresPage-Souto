@@ -585,6 +585,9 @@ a {
 .mainContainer p {
   text-align: left; }
 
+iframe {
+  grid-area: content; }
+
 .menuListaBox {
   border: 5px;
   margin-top: 10px;
