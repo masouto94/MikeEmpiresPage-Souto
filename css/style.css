@@ -478,6 +478,34 @@
   font-weight: bold;
   color: #0057E9; }
 
+@media only screen and (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "menu" "content" "content" "footer"; }
+  .gridCiv {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(20, 5%);
+    grid-template-areas: " 1 1" " 2 2" " 3 3" " 4 4";
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    overflow: auto; }
+  .gridListaUnidades {
+    display: grid;
+    grid-template-areas: "a";
+    grid-auto-rows: auto;
+    grid-area: content;
+    justify-content: safe center;
+    overflow: auto;
+    margin-right: 50px;
+    margin-left: 10%;
+    border-style: solid;
+    border-color: black;
+    border-width: thick; } }
+
 .menuImage {
   background-image: url(../media/background.jpg);
   background-position: center;
@@ -487,16 +515,16 @@
   display: flex; }
 
 .menuMenu {
-  display: flex;
-  vertical-align: middle;
-  margin-left: 80px; }
+  justify-content: stretch;
+  align-self: flex-end;
+  width: 100%;
+  margin-left: 10%; }
 
 .itemIndex {
   display: inline-flex;
-  vertical-align: bottom;
-  width: auto;
-  margin-top: 70px;
-  padding: 100px 100px 0px 100px; }
+  list-style: none;
+  vertical-align: baseline;
+  width: 24%; }
 
 .linkIndex, .linkNav {
   color: black;
@@ -574,6 +602,9 @@ a {
   background-color: #f7d15e;
   display: block; }
 
+.navbar {
+  display: flex; }
+
 .menuCivs {
   width: 150px;
   border-width: 1px;
@@ -623,6 +654,11 @@ a {
 .linkActivo {
   text-decoration: underline;
   color: red; }
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    justify-content: center; } }
 
 .listaUnidades {
   padding: 5px;

@@ -41,23 +41,23 @@ for i in civs:
 				</header>\n\
 				<h1 class="h1">'+h1+'</h1>\n\
 				<div class= "grid">\n\
-				<nav class="dropleft ">\n\
-					<ul class= "dropleft ">\n\
-						<li class="menuTitle"><h2 class="h2">Menu</h2></li>\n\
-						<li class= "menuItem">\n\
-							<a class= "menuIndex" href="../civilizations.html">Civilizations</a>\n\
-						</li>\n\
-						<li class= "menuItem">\n\
-							<a class= "menuIndex" href="../units.html">Units</a>\n\
-						</li>\n\
-						<li class= "menuItem">\n\
-							<a class= "menuIndex" href="../matchups.html">Matchups</a>\n\
-						</li>\n\
-						<li class= "menuItem">\n\
-							<a class= "menuIndex" href="../tests.html">Tests</a>\n\
-						</li>\n\
-					</ul>\n\
-				</nav>\n\
+		<nav class="navbar .justify-content-center">\n\
+			<ul class= "navbar-nav ">\n\
+				<li class="menuTitle"><h2 class="h2">Menu</h2></li>\n\
+				<li class= "menuItem nav-item">\n\
+					<a class= "menuIndex nav-link" href="../civilizations.html">Civilizations</a>\n\
+				</li>\n\
+				<li class= "menuItem nav-item">\n\
+					<a class= "menuIndex nav-link" href="../units.html">Units</a>\n\
+				</li>\n\
+				<li class= "menuItem nav-item">\n\
+					<a class= "menuIndex nav-link" href="../matchups.html">Matchups</a>\n\
+				</li>\n\
+				<li class= "menuItem nav-item">\n\
+					<a class= "menuIndex nav-link" href="../tests.html">Tests</a>\n\
+				</li>\n\
+			</ul>\n\
+		</nav>\n\
 				<div class="mainContainer">\n\
 					<p>Info sobre la civ correspondiente</p>\n\
 					<p>Info sobre la civ correspondiente</p>\n\

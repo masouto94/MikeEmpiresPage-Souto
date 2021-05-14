@@ -17,6 +17,10 @@
 	display: block;
 
 }
+.navbar{
+	display: flex;
+
+}
 
 .menuCivs{
 	width: 150px;
@@ -78,3 +82,12 @@ color: red
 .linkActivo{
 text-decoration: underline;
 color: red}
+
+@media only screen and (max-width: 768px) {
+.navbar{
+	width: 100%;
+	justify-content: center;
+}
+
+
+}

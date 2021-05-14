@@ -84,3 +84,49 @@ $color-fondo-civ:#fee134;
 
 
 }
+
+@media only screen and (max-width: 768px) {
+
+
+.grid{
+	display: grid;
+	grid-template-rows: auto ;
+    grid-template-columns: 100% ;
+    grid-template-areas:"menu"
+    					"content"
+    					"content"
+    					"footer";
+}
+
+.gridCiv{
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: repeat(20, 5%);
+	grid-template-areas:" 1 1"
+						" 2 2"
+						" 3 3"
+						" 4 4";
+	justify-content: center;
+	flex-direction: column;
+	margin: 10px;
+	overflow: auto
+
+}
+
+.gridListaUnidades{
+	display: grid;
+
+	grid-template-areas: "a";
+	grid-auto-rows: auto;
+	grid-area: content;
+	justify-content: safe center;
+	overflow: auto;
+	margin-right: 50px;
+	margin-left: 10%;
+	border-style: solid;
+	border-color: black;
+	border-width: thick;
+
+}
+
+}

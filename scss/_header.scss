@@ -8,18 +8,22 @@
 
 }
 .menuMenu{
-	display: flex;
-	vertical-align: middle;
-	margin-left: 80px;
+	justify-content: stretch;
+	align-self: flex-end;
+	width: 100%;
+	margin-left: 10%;
 
 
 }
 .itemIndex{
 	display: inline-flex;
-	vertical-align: bottom;
-	width: auto ;
-    margin-top: 70px;
-    padding: 100px 100px 0px 100px;
+	list-style: none;
+	vertical-align: baseline;
+	width: 24% ;
+    
+
+
+    // padding: 100px 100px 0px 100px;
 
 
 
