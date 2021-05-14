@@ -8,7 +8,7 @@ for i in civs:
 	name = str(i+".html")
 	h1 = str(i)
 	texto = str('<!DOCTYPE html>\n\
-<html lang="es">\n\
+<html lang="en">\n\
 <head>\n\
 	<meta charset="UTF-8">\n\
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">\n\
