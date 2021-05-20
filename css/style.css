@@ -465,11 +465,10 @@
   grid-template-areas: "a a a a a";
   grid-auto-rows: auto;
   grid-area: content;
-  justify-content: left;
   overflow: auto;
   margin-right: 50px;
   margin-left: 10%;
-  justify-content: left;
+  justify-content: space-evenly;
   border-style: solid;
   border-color: black;
   border-width: thick; }
@@ -586,7 +585,14 @@ a {
   text-align: left; }
 
 iframe {
-  grid-area: content; }
+  grid-area: content;
+  width: 600px;
+  height: 400px; }
+
+@media only screen and (max-width: 768px) {
+  iframe {
+    width: 100%;
+    height: 25%; } }
 
 .menuListaBox {
   border: 5px;
@@ -659,7 +665,7 @@ iframe {
   color: red; }
 
 @media only screen and (max-width: 768px) {
-  .navbar {
+  .navbar .justify-content-center {
     width: 100%;
     justify-content: center; } }
 
@@ -671,7 +677,9 @@ iframe {
   border-color: black;
   border-width: thin;
   align-items: center;
-  transition: background-color 1s; }
+  transition: background-color 1s;
+  list-style: none;
+  justify-content: safe center; }
 
 .listaUnidades:hover {
   background-color: #fb8500; }

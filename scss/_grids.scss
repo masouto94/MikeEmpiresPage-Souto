@@ -63,20 +63,17 @@ $color-fondo-civ:#fee134;
 // grilla de los tests//
 
 .gridListaUnidades{
-	display: grid;
-	grid-template-areas: "a a a a a";
-	grid-auto-rows: auto;
-	grid-area: content;
-	justify-content: left;
-	overflow: auto;
-	margin-right: 50px;
-	margin-left: 10%;
-	justify-content: left;
-	border-style: solid;
-	border-color: black;
-	border-width: thick;
-
-}
+display: grid;
+    grid-template-areas: "a a a a a";
+    grid-auto-rows: auto;
+    grid-area: content;
+    overflow: auto;
+    margin-right: 50px;
+    margin-left: 10%;
+    justify-content: space-evenly;
+    border-style: solid;
+    border-color: black;
+    border-width: thick;}
 
 .gridListaUnidades a{
 	font-weight: bold;

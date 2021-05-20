@@ -67,4 +67,15 @@ $margen-grande: 50px;
 
 iframe{
 	grid-area:content;
+	width: 600px;
+	height: 400px;
+}
+
+@media only screen and (max-width: 768px) {
+iframe{
+	width: 100%;
+	height: 25%;
+}
+
+
 }

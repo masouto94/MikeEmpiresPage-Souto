@@ -41,7 +41,7 @@ for i in civs:
 				</header>\n\
 				<h1 class="h1">'+h1+'</h1>\n\
 				<div class= "grid">\n\
-		<nav class="navbar .justify-content-center">\n\
+		<nav class="navbar justify-content-center">\n\
 			<ul class= "navbar-nav ">\n\
 				<li class="menuTitle"><h2 class="h2">Menu</h2></li>\n\
 				<li class= "menuItem nav-item">\n\
@@ -76,9 +76,9 @@ for i in civs:
 				</div>\n\
 				<div class=divFooter>\n\
 					<footer id= "footer">\n\
-						<h3 class="h3">Send us an email</h3>\n\
-						<p>Select your country</p>\n\
-						<form action="">\n\
+						<p><b>Send us an email</b></p>\n\
+						<p><u>Select your country</u></p>\n\
+						<form method="post" action="">\n\
 						 <div class="selectTextArea">\n\
 						 	<select name="country">\n\
 							<option value="AR">Argentina</option>\n\
@@ -88,7 +88,7 @@ for i in civs:
 							<textarea rows="5" cols="40">\n\
 							</textarea>\n\
 						</div>\n\
-							<h4 class="h4">Are you a patron/channel member?</h4>\n\
+							<p><b>Are you a patron/channel member?</b></p>\n\
 							<div id = "ButtonRadius">\n\
 							<div>Yes</div>\n\
 							<input type="radio" name="patron" value="yes" />\n\

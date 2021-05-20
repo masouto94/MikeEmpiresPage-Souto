@@ -31,7 +31,7 @@
 		</header>
 			<h1 class="h1">Make your own matchups</h1>
 		<div class= "grid">
-		<nav class="navbar .justify-content-center">
+		<nav class="navbar justify-content-center">
 
 			<ul class= "navbar-nav ">
 				<li class="menuTitle"><h2 class="h2">Menu</h2></li>
@@ -51,50 +51,57 @@
 		</nav>
 			<div class= mainContainer >
 				<table class="unitComparator table-info">  <colgroup span="2" class="columns">
-				</colgroup>  <tr>
+				</colgroup>
 					<th>(Unit 1)</th>
 					<th>Stat</th>
-					<th>(Unit 2)</th>  </tr>  <tr>
+					<th>(Unit 2)</th>
+					  <tr>
 						<td>100</td>
 						<td>HP</td>
 						<td>80</td>
 					</tr>
-					<tr>  <td>10</td>  <td>Attack</td>  <td>12</td>
+					<tr>
+						<td>10</td>
+						<td>Attack</td>
+						<td>12</td>
 					</tr>
-					<tr>  <td>2.0</td>  <td>ROF</td>  <td>1.9</td>
+					<tr>
+						<td>2.0</td>
+						<td>ROF</td>
+						<td>1.9</td>
 					</tr>
 				</table>
 			
 				<p>Acá va algún input para probar casos y los resultados</p>
 			</div>
 			</div>
-			<div class=divFooter>
-				<footer id= "footer">
-					<h3 class="h3">Send us an email</h3>
-					<p>Select your country</p>
-					<form action="">
-					 <div class="selectTextArea">
-					 	<select name="country">
-						<option value="AR">Argentina</option>
-						<option value="BR">Brasil</option>
-						<option value="ROW">Other</option>
-						</select>
-						<textarea rows="5" cols="40">
-						</textarea>
-					</div>
-						<h4 class="h4">Are you a patron/channel member?</h4>
-						<div id = "ButtonRadius">
-						<div>Yes</div>
-						<input type="radio" name="patron" value="yes" />
-						<div id= "No">No</div>
-						<input type="radio" name="patron" value="no" />
-						</div>
-						<div id= "Submits">
-						<input type="submit" value="Send"/>
-						<input id="Reset" type="reset" value="Reset"/>
-						</div>
-					</form>
-				</footer>
+	<div class=divFooter>
+		<footer id= "footer">
+			<p><b>Send us an email</b></p>
+			<p><u>Select your country</u></p>
+			<form method="post" action="">
+			 <div class="selectTextArea">
+			 	<select name="country">
+				<option value="AR">Argentina</option>
+				<option value="BR">Brasil</option>
+				<option value="ROW">Other</option>
+				</select>
+				<textarea rows="5" cols="40">
+				</textarea>
 			</div>
+				<p><b>Are you a patron/channel member?</b></p>
+				<div id = "ButtonRadius">
+				<div>Yes</div>
+				<input type="radio" name="patron" value="yes" />
+				<div id= "No">No</div>
+				<input type="radio" name="patron" value="no" />
+				</div>
+				<div id= "Submits">
+				<input type="submit" value="Send"/>
+				<input id="Reset" type="reset" value="Reset"/>
+				</div>
+			</form>
+		</footer>
+	</div>
 		</body>
 	</html>
