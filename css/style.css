@@ -575,7 +575,7 @@ a {
   justify-content: left; }
 
 .mainContainer {
-  margin: 10px 5px 10px 0;
+  margin: 10px 5px;
   padding-left: 10px;
   padding-top: 10px;
   text-align: center;
@@ -592,7 +592,7 @@ iframe {
 @media only screen and (max-width: 768px) {
   iframe {
     width: 100%;
-    height: 25%; } }
+    height: 300px; } }
 
 .menuListaBox {
   border: 5px;
@@ -666,8 +666,14 @@ iframe {
 
 @media only screen and (max-width: 768px) {
   .navbar .justify-content-center {
-    width: 100%;
-    justify-content: center; } }
+    width: 100%; }
+  .navbar-nav {
+    flex-direction: row;
+    width: 100%; }
+  .menuTitle {
+    display: none; }
+  .nav-item {
+    text-align: center; } }
 
 .listaUnidades {
   padding: 5px;
@@ -678,8 +684,7 @@ iframe {
   border-width: thin;
   align-items: center;
   transition: background-color 1s;
-  list-style: none;
-  justify-content: safe center; }
+  list-style: none; }
 
 .listaUnidades:hover {
   background-color: #fb8500; }
@@ -723,6 +728,14 @@ iframe {
   width: 100%;
   justify-content: center; }
 
+.tableDescription {
+  border-style: solid;
+  border-width: thin;
+  margin: 50px 50px;
+  grid-area: content;
+  width: 100%;
+  justify-content: left; }
+
 .unitComparator th {
   border-bottom-style: double;
   border-bottom-width: thin; }
@@ -730,3 +743,20 @@ iframe {
 .unitComparator td {
   border-style: double;
   border-width: 0 thin thin thin; }
+
+@media only screen and (max-width: 768px) {
+  .unitComparator {
+    border-style: solid;
+    border-width: thick;
+    margin: 0;
+    grid-area: content;
+    width: 100%;
+    justify-content: center; }
+  .tableDescription {
+    border-style: solid;
+    border-width: thin;
+    margin: 0;
+    margin-top: 20px;
+    grid-area: content;
+    width: 100%;
+    justify-content: left; } }

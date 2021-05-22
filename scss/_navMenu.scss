@@ -84,10 +84,18 @@ text-decoration: underline;
 color: red}
 
 @media only screen and (max-width: 768px) {
-.navbar .justify-content-center{
-	width: 100%;
-	justify-content: center;
-}
+  .navbar .justify-content-center {
+    width: 100%;
+ }
 
+ .navbar-nav{
+  flex-direction: row;
+  width: 100%;
+  }
 
-}
+  .menuTitle{
+    display: none;
+    }
+  .nav-item{
+    text-align: center;
+    } }

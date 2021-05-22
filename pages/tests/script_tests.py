@@ -61,7 +61,7 @@ for i,j in zip(unit_names,files):
 				<div class= "grid">\n\
 		<nav class="navbar justify-content-center">\n\
 			<ul class= "navbar-nav ">\n\
-				<li class="menuTitle"><h2 class="h2">Menu</h2></li>\n\
+				<li class="menuTitle"><p><b>Menu</b></p></li>\n\
 				<li class= "menuItem nav-item">\n\
 					<a class= "menuIndex nav-link" href="../civilizations.html">Civilizations</a>\n\
 				</li>\n\
@@ -87,7 +87,7 @@ for i,j in zip(unit_names,files):
 					<footer id= "footer">\n\
 						<p><b>Send us an email</b></p>\n\
 						<p><u>Select your country</u></p>\n\
-						<form method="post" action="">\n\
+						<form method="post" action="#header">\n\
 						 <div class="selectTextArea">\n\
 						 	<select name="country">\n\
 							<option value="AR">Argentina</option>\n\

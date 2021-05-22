@@ -24,10 +24,13 @@
 }
 
 // Tablas de resultados
+$margen-grande: 50px;
+$margen-chico: 20px;
+
 .tablaResultados{
 border-style: solid;
 border-width: thick;
-margin-top: 50px;
+margin-top: $margen-grande;
 grid-area: content;
 width: 100%;
 text-align: center;
@@ -52,7 +55,7 @@ text-align: center;
 .listasReporte{
 border-style: double;
 border-width: thin;
-margin: 20px;	
+margin: $margen-chico;	
 list-style: square;
 grid-area: content;
 display: flex;
@@ -68,13 +71,21 @@ list-style-type: none;
 .unitComparator{
 border-style: solid;
 border-width: thick;
-margin: 50px 50px;
+margin: $margen-grande $margen-grande;
 grid-area: content;
 width: 100%;
 justify-content: center;
 
 }
+.tableDescription{
+border-style: solid;
+border-width: thin;
+margin: $margen-grande $margen-grande;
+grid-area: content;
+width: 100%;
+justify-content: left;
 
+}
 
 .unitComparator th{
 
@@ -88,4 +99,26 @@ justify-content: center;
 	border-style: double;
 	border-width: 0 thin thin thin;
 	
+}
+@media only screen and (max-width: 768px) {
+.unitComparator{
+border-style: solid;
+border-width: thick;
+margin: 0;
+grid-area: content;
+width: 100%;
+justify-content: center;
+
+}
+
+.tableDescription{
+border-style: solid;
+border-width: thin;
+margin:0;
+margin-top: $margen-chico;
+grid-area: content;
+width: 100%;
+justify-content: left;
+
+}
 }
