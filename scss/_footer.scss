@@ -1,0 +1,39 @@
+// Footer
+
+.divFooter{
+	margin-top: 50px;
+	margin-left: 10px;
+	display: block;
+	grid-area: footer;
+	border-top-style: dashed;
+	border-top-width: thin;
+	position: relative;
+	display: flex;
+
+}
+.selectTextArea {
+	display: flex;
+	flex-direction: column;
+	vertical-align: top;
+	margin-bottom: 20px;
+
+}
+.selectTextArea textarea{
+	margin-top: 10px
+}
+
+#ButtonRadius{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-bottom: 10px
+
+}
+
+#No{
+	margin-left: 20px
+}
+
+#Reset{
+	margin-left: 20px
+}

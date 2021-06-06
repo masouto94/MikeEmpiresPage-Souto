@@ -1,0 +1,101 @@
+.menuListaBox{
+	border: 5px;
+	margin-top: 10px;
+	width: 155px;
+
+	position: relative;
+	display: flex;
+}
+.menuNav{
+	margin-top:10px;
+	margin-bottom:10px;
+	width: 155px;
+	border-style: solid;
+	border-color: black;
+	float: right;
+	background-color: #f7d15e;
+	display: block;
+
+}
+.navbar{
+	display: flex;
+
+}
+
+.menuCivs{
+	width: 150px;
+	border-width: 1px;
+	display: block;
+	border-style: solid;
+	border:1px;	
+	border-color: black;
+
+}
+
+.menuTitle{
+	border-style: solid;
+	border-color: black;
+	background-color:#fee134 ;
+	width: 155px;
+}
+.menuItem{
+
+	border-color: black;
+	width: 155px;
+	display: block;
+	border-style: solid;
+	position: inherit;
+	background-color:#fee134 ;
+	transition: background-color 1s
+
+}
+
+
+.menuItem:hover{
+	background-color:#fb8500;
+	}
+
+.menuLink a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+.menuIndex{
+	  font-weight: bold;
+	  color: #0057E9;
+
+}
+
+.menuLink:hover{
+text-decoration: underline;
+color: red
+}
+
+.linkNav:hover{
+text-decoration: underline;
+color: red
+}
+.linkActivo{
+text-decoration: underline;
+color: red}
+
+@media only screen and (max-width: 768px) {
+  .navbar .justify-content-center {
+    width: 100%;
+ }
+
+ .navbar-nav{
+  flex-direction: row;
+  width: 100%;
+  }
+
+  .menuTitle{
+    display: none;
+    }
+  .nav-item{
+    text-align: center;
+    } }

@@ -1,0 +1,129 @@
+/*Grilla general */
+
+.grid{
+	display: grid;
+	grid-template-rows: auto ;
+    grid-template-columns: 12.5% 31.75% 31.75% 25% ;
+    grid-template-areas:"menu content content ." ". content content ." "footer footer footer footer";
+}
+
+// Grilla de las civs
+
+
+.gridCiv{
+	display: grid;
+	grid-template-columns: repeat(10, 150px);
+	grid-template-rows: repeat(4, 100px);
+	grid-template-areas:" 1 1 1 1 1 1 1 1 1 1"
+						" 2 2 2 2 2 2 2 2 2 2"
+						" 3 3 3 3 3 3 3 3 3 3"
+						" 4 4 4 4 4 4 4 4 4 4";
+	justify-content: left;
+	margin: 10px;
+	overflow: auto
+
+}
+
+// Animaciones de la grilla de las civs
+.gridCiv li{
+ transition: background-color 1s;
+ font-weight: bold;
+ color: #0057E9;
+
+}
+
+.gridCiv li:hover{
+	background-color: #fb8500
+}
+
+// mixin de los íconos de las civs en la grilla
+
+$civilizations: Aztecs,Berbers,Britons,Bulgarians,Burgundians,Burmese,Byzantines,Celts,Chinese,Cumans,Ethiopians,Franks,Goths,Huns,Incas,Indians,Italians,Japanese,Khmer,Koreans,Lithuanians,Magyars,Malay,Malians,Mayans,Mongols,Persians,Portuguese,Saracens,Sicilians,Slavs,Spanish,Tatars,Teutons,Turks,Vietnamese,Vikings;
+$color-fondo-civ:#fee134;
+
+@mixin iconos{
+	list-style: none;
+	grid-area: auto;
+	text-align: center;
+		border: 5px;
+	border-width: 5px;
+	border-color: black;
+	border-style: double;
+	background-color: $color-fondo-civ;
+	margin: 2px;
+}
+
+@each $civ in $civilizations {
+  .#{$civ}Icon {
+	@include iconos;
+  }
+}
+
+
+// grilla de los tests//
+
+.gridListaUnidades{
+display: grid;
+    grid-template-areas: "a a a a a";
+    grid-auto-rows: auto;
+    grid-area: content;
+    overflow: auto;
+    margin-right: 50px;
+    margin-left: 10%;
+    justify-content: space-evenly;
+    border-style: solid;
+    border-color: black;
+    border-width: thick;}
+
+.gridListaUnidades a{
+	font-weight: bold;
+	color: #0057E9;
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+.grid{
+	display: grid;
+	grid-template-rows: auto ;
+    grid-template-columns: 100% ;
+    grid-template-areas:"menu"
+    					"content"
+    					"content"
+    					"footer";
+}
+
+.gridCiv{
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: repeat(20, 5%);
+	grid-template-areas:" 1 1"
+						" 2 2"
+						" 3 3"
+						" 4 4";
+	justify-content: center;
+	flex-direction: column;
+	margin: 10px;
+	overflow: auto
+
+}
+
+.gridListaUnidades{
+	display: grid;
+
+	grid-template-areas: "a";
+	grid-auto-rows: auto;
+	grid-area: content;
+	justify-content: safe center;
+	overflow: auto;
+	margin-right: 50px;
+	margin-left: 10%;
+	border-style: solid;
+	border-color: black;
+	border-width: thick;
+
+}
+
+}

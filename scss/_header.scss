@@ -1,0 +1,45 @@
+.menuImage{
+	background-image: url(../media/background.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 200px;
+	display: flex;
+
+}
+.menuMenu{
+	justify-content: stretch;
+	align-self: flex-end;
+	width: 100%;
+	margin-left: 10%;
+
+
+}
+.itemIndex{
+	display: inline-flex;
+	list-style: none;
+	vertical-align: baseline;
+	width: 24% ;
+    
+
+
+    // padding: 100px 100px 0px 100px;
+
+
+
+}
+
+.linkIndex,.linkNav {
+	color: black;
+	font-weight: bold;
+	border-style: outset;
+	border-width: thick;
+	border-color: #585503a8;
+	background-color: yellow;
+	display: inline;
+}
+
+.linkIndex:hover{
+text-decoration: underline;
+color: red
+}

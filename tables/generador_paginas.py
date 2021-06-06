@@ -3,10 +3,10 @@ import numpy as np
 import os, sys
 import re
 
-pathbest = "C:/Users/masou/Documents/CoderHouse/Unidad 2/mi sitio-Souto/tables/Best"
+pathbest = "C:/Users/masou/Documents/CoderHouse/DW/MikeEmpiresPage-Souto/tables/Best"
 archivosbest = os.listdir(pathbest)
 
-pathworst = "C:/Users/masou/Documents/CoderHouse/Unidad 2/mi sitio-Souto/tables/Worst"
+pathworst = "C:/Users/masou/Documents/CoderHouse/DW/MikeEmpiresPage-Souto/tables/Worst"
 archivosworst = os.listdir(pathworst)
 
 

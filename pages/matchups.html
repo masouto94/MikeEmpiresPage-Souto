@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 	<link rel="stylesheet" href="../css/style.css">
 	<title>Matchups</title>
 </head>
-<body>
-	<h1>Make your own matchups</h1>
+<body class="body indexBody">
+
 	<header>
 		<div class= menuImage>
 			<nav class="menuMenu">  <ul>
@@ -27,72 +29,81 @@
 				</li>  </ul>
 			</nav> </div>
 		</header>
+			<h1 class="h1">Make your own matchups</h1>
 		<div class= "grid">
-		<nav class="menuNav">
-			<h2>
-				<i>Menu</i>
-			</h2>
-			<ul class= "menuLista">
-				<li class= "menuItem">
-					<a class= "menuIndex" href="./civilizations.html">Civilizations</a>
+		<nav class="navbar justify-content-center">
+
+			<ul class= "navbar-nav ">
+				<li class="menuTitle"><p><b>Menu</b></p></li>
+				<li class= "menuItem nav-item">
+					<a class= "menuIndex nav-link" href="./civilizations.html">Civilizations</a>
 				</li>
-				<li class= "menuItem">
-					<a class= "menuIndex" href="./units.html">Units</a>
+				<li class= "menuItem nav-item">
+					<a class= "menuIndex nav-link" href="./units.html">Units</a>
 				</li>
-				<li class= "menuItem">
-					<a class= "menuIndex" href="./matchups.html">Matchups</a>
+				<li class= "menuItem nav-item">
+					<a class= "menuIndex nav-link" href="./matchups.html">Matchups</a>
 				</li>
-				<li class= "menuItem">
-					<a class= "menuIndex" href="./tests.html">Tests</a>
+				<li class= "menuItem nav-item">
+					<a class= "menuIndex nav-link" href="./tests.html">Tests</a>
 				</li>
 			</ul>
 		</nav>
-			<div class= mainContainer >
-				<table class=unitComparator>  <colgroup span="2" class="columns">
-				</colgroup>  <tr>
+			<div class= "mainContainer" >
+				<table class="unitComparator table-info">  <colgroup span="2" class="columns">
+				</colgroup>
 					<th>(Unit 1)</th>
 					<th>Stat</th>
-					<th>(Unit 2)</th>  </tr>  <tr>
+					<th>(Unit 2)</th>
+					  <tr>
 						<td>100</td>
 						<td>HP</td>
 						<td>80</td>
 					</tr>
-					<tr>  <td>10</td>  <td>Attack</td>  <td>12</td>
+					<tr>
+						<td>10</td>
+						<td>Attack</td>
+						<td>12</td>
 					</tr>
-					<tr>  <td>2.0</td>  <td>ROF</td>  <td>1.9</td>
+					<tr>
+						<td>2.0</td>
+						<td>ROF</td>
+						<td>1.9</td>
 					</tr>
 				</table>
 			
-				<p>Acá va algún input para probar casos y los resultados</p>
-			</div>
-			</div>
-			<div class=divFooter>
-				<footer id= "footer">
-					<h3>Send us an email</h3>
-					<p>Select your country</p>
-					<form action="">
-					 <div class="selectTextArea">
-					 	<select name="country">
-						<option value="AR">Argentina</option>
-						<option value="BR">Brasil</option>
-						<option value="ROW">Other</option>
-						</select>
-						<textarea rows="5" cols="40">
-						</textarea>
+				<div class= "tableDescription">
+					<p>Acá va algún input para probar casos y los resultados</p>
 					</div>
-						<h4>Are you a patron/channel member?</h4>
-						<div id = "ButtonRadius">
-						<div>Yes</div>
-						<input type="radio" name="patron" value="yes" />
-						<div id= "No">No</div>
-						<input type="radio" name="patron" value="no" />
-						</div>
-						<div id= "Submits">
-						<input type="submit" value="Send"/>
-						<input id="Reset" type="reset" value="Reset"/>
-						</div>
-					</form>
-				</footer>
 			</div>
+			</div>
+	<div class="divFooter">
+		<footer id= "footer">
+			<p><b>Send us an email</b></p>
+			<p><u>Select your country</u></p>
+			<form method="post" action="#header">
+			 <div class="selectTextArea">
+			 	<select name="country">
+				<option value="AR">Argentina</option>
+				<option value="BR">Brasil</option>
+				<option value="ROW">Other</option>
+				</select>
+				<textarea rows="5" cols="40">
+				</textarea>
+			</div>
+				<p><b>Are you a patron/channel member?</b></p>
+				<div id = "ButtonRadius">
+				<div>Yes</div>
+				<input type="radio" name="patron" value="yes" />
+				<div id= "No">No</div>
+				<input type="radio" name="patron" value="no" />
+				</div>
+				<div id= "Submits">
+				<input type="submit" value="Send"/>
+				<input id="Reset" type="reset" value="Reset"/>
+				</div>
+			</form>
+		</footer>
+	</div>
 		</body>
 	</html>

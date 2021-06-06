@@ -1,0 +1,124 @@
+// Tabla de las unidades testeadas
+
+.listaUnidades{
+	padding: 5px;
+	border:10px;
+	margin: 0;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+	align-items: center;
+	transition: background-color 1s;
+	list-style: none;
+
+}
+
+.listaUnidades:hover{
+	background-color: #fb8500
+
+}
+
+.listaUnidades{
+	text-align: left;
+
+}
+
+// Tablas de resultados
+$margen-grande: 50px;
+$margen-chico: 20px;
+
+.tablaResultados{
+border-style: solid;
+border-width: thick;
+margin-top: $margen-grande;
+grid-area: content;
+width: 100%;
+text-align: center;
+
+
+
+}
+
+.tablaResultados th{
+
+	border-style: double;
+	border-width: thin;
+
+	
+}
+.tablaResultados td{
+
+	border-style: double;
+	border-width: 0 thin thin thin;
+	
+}
+.listasReporte{
+border-style: double;
+border-width: thin;
+margin: $margen-chico;	
+list-style: square;
+grid-area: content;
+display: flex;
+flex-wrap: nowrap;
+flex-direction: column;
+list-style: none;
+list-style-type: none;
+
+}
+
+
+// Comparador de unidades
+.unitComparator{
+border-style: solid;
+border-width: thick;
+margin: $margen-grande $margen-grande;
+grid-area: content;
+width: 100%;
+justify-content: center;
+
+}
+.tableDescription{
+border-style: solid;
+border-width: thin;
+margin: $margen-grande $margen-grande;
+grid-area: content;
+width: 100%;
+justify-content: left;
+
+}
+
+.unitComparator th{
+
+	border-bottom-style: double;
+	border-bottom-width: thin;
+
+	
+}
+.unitComparator td{
+
+	border-style: double;
+	border-width: 0 thin thin thin;
+	
+}
+@media only screen and (max-width: 768px) {
+.unitComparator{
+border-style: solid;
+border-width: thick;
+margin: 0;
+grid-area: content;
+width: 100%;
+justify-content: center;
+
+}
+
+.tableDescription{
+border-style: solid;
+border-width: thin;
+margin:0;
+margin-top: $margen-chico;
+grid-area: content;
+width: 100%;
+justify-content: left;
+
+}
+}
