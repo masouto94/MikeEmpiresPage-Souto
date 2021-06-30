@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Funciones</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="containerCajas">
+            <div class="unitBox1">
+                <h3>Unidad 1</h3>
+                Ataque <br>
+                <input type="text" id="unit1" value="10"><br>
+                <input type="radio" id="infantry_at" name="unit1_class" value="Infantry"> Infantry<br/>
+                <input type="radio" id="cavalry_at" name="unit1_class" value="Cavalry"> Cavalry<br/>
+                <input type="radio" id="archer_at" name="unit1_class" value="Archer"> Archer<br/>
+            </div>
+            <div class="unitBox2">
+                Defensa <br>
+                <input type="text" id="unit2" value="1">
+            </div>
+        </div>
+        <div class="containerCajas">
+            <div class="unitBox3">
+                <h3>Unidad 2</h3>
+                Ataque <br>
+                <input type="text" id="unit3" value="12"><br>
+                <input type="radio" id="infantry_def" name="unit2_class" value="Infantry"> Infantry <br/>
+                <input type="radio" id="cavalry_def" name="unit2_class" value="Cavalry" > Cavalry<br/>
+                <input type="radio" id="archer_def" name="unit2_class" value="Archer"> Archer <br/>
+            </div>
+            <div class="unitBox4">
+                Defensa <br>
+                <input type="text" id="unit4" value="2">
+            </div>
+        </div>
+        <div class="containerCajasResults">
+            <div class=" resultBox1">
+                <h3>Resultados</h3>
+                Resultado 1 ataca a 2 <br>
+                <input type="text" id="resultado1" value= "">
+                <button type="button" id= "button1" onclick="">Simular</button>
+            </div>
+
+
+            <div class=" resultBox2">
+                Resultado 2 ataca a 1 <br>
+                <input type="text" id="resultado2" value= "">
+                <button type="button" id= "button2" onclick="">Simular</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="./clases.js"></script>
+    <script src="./formulas.js"></script>
+</body>
+
+</html>

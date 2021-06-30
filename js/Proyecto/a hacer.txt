@@ -1,0 +1,3 @@
+- Instanciar dos objetos de la clase melee unit tomando los valores de los input. Ver el proyecto del profe
+- Aplicar alguna función para simular el resultado
+- Ver si se  puede incluir la parte de las mejoras. Aunque por ahora no es necesario
