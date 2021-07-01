@@ -1,6 +1,7 @@
 .mainContainer{
     display: grid;
-    grid-template-areas: "a b c";
+    grid-template-areas: "a b c"
+                         "d d d";
     background-color: #ff9321;
     border-style: solid;
     border-radius: 19px;
@@ -41,4 +42,11 @@
     align-items: center;
     flex-direction: column;
     display: flex;
+}
+.explicacion{
+    margin: 10%;
+    grid-area: d;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
 }
