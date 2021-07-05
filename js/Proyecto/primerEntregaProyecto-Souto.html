@@ -68,23 +68,25 @@
         <div class="containerCajasResults">
             <div class= "resultBox1">
                 <h3>Resultados</h3>
-                Resultado 1 ataca a 2 <br>
+                Resultado 1 ataca a 2 (daño)<br>
                 <input type="text" id="resultado1" value= "">
                 <button type="button" id= "button1" onclick="">Simular</button>
             </div>
+            <div class= "reports" id="reportBox1"></div>
 
 
             <div class= "resultBox2">
-                Resultado 2 ataca a 1 <br>
+                Resultado 2 ataca a 1 (daño)<br>
                 <input type="text" id="resultado2" value= "">
                 <button type="button" id= "button2" onclick="">Simular</button>
             </div>
+            <div class= "reports" id="reportBox2"></div>
         </div>
         <div class="explicacion"><p>Esta página es el primer abordaje de un simulador de batallas para el Age of Empires 2. <br>
             El cálculo toma los valores de ataque (melee o de rango) y le resta el valor de defensa correspondiente. Si el resultado es 0 o menos, se imputa 1. <br>
             Una vez obtenido este valor, se tienen que sumar las diferencias del valor de los <i>bonus</i> con las respectivas <i>armor classes</i>, si las hubiere. <br>
             Por ejemplo: Si el valor de ataque melee de la unidad 1 es <b>10</b> y la armadura melee de la unidad 2 es <b>1</b>, el subtotal será 9. Si la unidad 1 tiene <br>
-            <i>bonus</i> de <b>+10</b> contra <b>Infantry</b> y la unidad 2 tiene la <i>armor class</i> "<b>Infantry</b>" con el valor 0 (valor por defecto), la unidad 1 causará 19 de daño a la unidad 2 
+            <i>bonus</i> de <b>+10</b> contra <b>Infantry</b> y la unidad 2 tiene la <i>armor class</i> "<b>Infantry</b>" con el valor 0 (valor por defecto), la unidad 1 causará 19 de daño a la unidad 2 <br>
         </p></div>
 
     </div>

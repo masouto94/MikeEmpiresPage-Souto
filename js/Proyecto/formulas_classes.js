@@ -74,7 +74,7 @@ const ataqueResultado = (atacante, defensor) => {
     
 
 // Función para calcular el bonus según la armor class y aplicar la función del resultado del ataque
-const bonus = (id_update, atacante, defensor) => {
+const bonus = (atacante, defensor) => {
 
     var resultado_bonus = 0;
     for(i in Object.keys(defensor.armorclasses[0])){
@@ -88,11 +88,15 @@ const bonus = (id_update, atacante, defensor) => {
 
     var subtotal = ataqueResultado(atacante,defensor);
     var resultado = subtotal + resultado_bonus;
-    var campo = document.getElementById(id_update);
-    campo.value = resultado;
 
-    return resultado, campo
+
+    return resultado
 };
+
+const updater_input_value = (id_update, valor) =>{
+    var campo = document.getElementById(id_update);
+    campo.value = valor;
+}
 // Se instancian las dos unidades para la prueba
 
 // Unidad 1
@@ -126,5 +130,35 @@ var Long_Swordsman = new Melee_Unit(name_unit_2,hp_unit_2,attack_unit_2,bonus_un
 console.log(Jaguar_Warrior);
 console.log(Long_Swordsman);
 
-document.getElementById("button1").addEventListener("click",function(){bonus("resultado1",Jaguar_Warrior,Long_Swordsman)},false);
-document.getElementById("button2").addEventListener("click",function(){bonus("resultado2",Long_Swordsman,Jaguar_Warrior)},false);
+document.getElementById("button1").addEventListener("click",function(){updater_input_value("resultado1",(bonus(Jaguar_Warrior,Long_Swordsman)))},false);
+document.getElementById("button2").addEventListener("click",function(){updater_input_value("resultado2",(bonus(Long_Swordsman,Jaguar_Warrior)))},false);
+
+// Se identifica el elemento que va a tener un valor dinámico
+var reporte_1 = document.getElementById("reportBox1");
+var reporte_2 = document.getElementById("reportBox2");
+
+// Se coteja el daño contra el hp y se genera un reporte segun win o lose
+const reporte_output_pelea = () =>{
+
+
+var dano_1a2 = parseFloat(document.getElementById("resultado1").value);
+var dano_2a1 = parseFloat(document.getElementById("resultado2").value);
+
+
+var hp_sobre_dano_1a2 = Math.ceil(Long_Swordsman.hp / dano_1a2);
+var hp_sobre_dano_2a1 = Math.ceil(Jaguar_Warrior.hp / dano_2a1);
+
+if(hp_sobre_dano_1a2 < hp_sobre_dano_2a1){
+    reporte_1.innerHTML = `El ${Jaguar_Warrior.name} gana porque necesita ${hp_sobre_dano_1a2} golpes para ganar`;
+    reporte_2.innerHTML = `El ${Long_Swordsman.name} pierde porque necesita ${hp_sobre_dano_2a1} golpes para ganar`; 
+}else if(hp_sobre_dano_2a1 < hp_sobre_dano_1a2){
+    reporte_1.innerHTML = `El ${Jaguar_Warrior.name} pierde porque necesita ${hp_sobre_dano_1a2} golpes para ganar`;
+    reporte_2.innerHTML = `El ${Long_Swordsman.name} gana porque necesita ${hp_sobre_dano_2a1} golpes para ganar`; 
+    
+}else if(hp_sobre_dano_1a2 == hp_sobre_dano_2a1) {
+    reporte_1.innerHTML = `Las unidades empatan porque ambas necesitan ${hp_sobre_dano_1a2} para ganar`;
+    reporte_2.innerHTML = `Las unidades empatan porque ambas necesitan ${hp_sobre_dano_1a2} para ganar`;
+}
+};
+document.getElementById("button1").addEventListener("click", function(){reporte_output_pelea()});
+document.getElementById("button2").addEventListener("click", function(){reporte_output_pelea()});

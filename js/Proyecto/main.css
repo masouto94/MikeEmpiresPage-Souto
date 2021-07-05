@@ -50,3 +50,9 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
 }
+
+.reports{
+    margin: 10px 0px;
+    text-align: center;
+    font-family: monospace;
+}
