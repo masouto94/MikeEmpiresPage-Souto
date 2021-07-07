@@ -130,8 +130,6 @@ var Long_Swordsman = new Melee_Unit(name_unit_2,hp_unit_2,attack_unit_2,bonus_un
 console.log(Jaguar_Warrior);
 console.log(Long_Swordsman);
 
-document.getElementById("button1").addEventListener("click",function(){updater_input_value("resultado1",(bonus(Jaguar_Warrior,Long_Swordsman)))},false);
-document.getElementById("button2").addEventListener("click",function(){updater_input_value("resultado2",(bonus(Long_Swordsman,Jaguar_Warrior)))},false);
 
 // Se identifica el elemento que va a tener un valor dinámico
 var reporte_1 = document.getElementById("reportBox1");
@@ -160,5 +158,3 @@ if(hp_sobre_dano_1a2 < hp_sobre_dano_2a1){
     reporte_2.innerHTML = `Las unidades empatan porque ambas necesitan ${hp_sobre_dano_1a2} para ganar`;
 }
 };
-document.getElementById("button1").addEventListener("click", function(){reporte_output_pelea()});
-document.getElementById("button2").addEventListener("click", function(){reporte_output_pelea()});

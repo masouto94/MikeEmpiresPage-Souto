@@ -70,7 +70,7 @@
                 <h3>Resultados</h3>
                 Resultado 1 ataca a 2 (daño)<br>
                 <input type="text" id="resultado1" value= "">
-                <button type="button" id= "button1" onclick="">Simular</button>
+                <button type="button" id= "button1" onclick="updater_input_value('resultado1',bonus(Jaguar_Warrior,Long_Swordsman));reporte_output_pelea();">Simular</button>
             </div>
             <div class= "reports" id="reportBox1"></div>
 
@@ -78,7 +78,7 @@
             <div class= "resultBox2">
                 Resultado 2 ataca a 1 (daño)<br>
                 <input type="text" id="resultado2" value= "">
-                <button type="button" id= "button2" onclick="">Simular</button>
+                <button type="button" id= "button2" onclick="updater_input_value('resultado2',bonus(Long_Swordsman,Jaguar_Warrior));reporte_output_pelea();">Simular</button>
             </div>
             <div class= "reports" id="reportBox2"></div>
         </div>
