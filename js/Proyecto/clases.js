@@ -71,7 +71,4 @@ class University{
         this.siege_engineers = false;
         this.chemistry = false;
     }
-}
-
-
-
+};
