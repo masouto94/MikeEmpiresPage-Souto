@@ -15,27 +15,25 @@
 
             <div class="unitBox1">
                 <h3>Unidad 1</h3>
-                Nombre <br>
-                <input type="text" id="name_unit_1" value="Jaguar Warrior"><br>
-                HP<br>
-                <input type="text" id="hp_unit_1" value="50"><br>
-                Attack(<i>{"Class": value,...}</i>)<br>
-                <input type="text" id="attack_unit_1" value='{"melee": 10}'><br>
-                Bonus(<i>{"Class": value,...}</i>)<br>
-                <input type="text" id="bonus_unit_1" value='{"Infantry": 10, "Condottiero": 10, "Eagle Warrior": 2, "Standard Building": 2}'><br>
-                ROF<br>
-                <input type="text" id="ROF_unit_1" value="2.0"><br>
-                Blast Radius<br>
-                <input type="text" id="blast_radius_unit_1" value="0"><br>
-                Armor classes(<i>{"Class": value,...}</i>)<br>
-                <input type="text" id="armorclasses_unit_1" value='{"base_melee":1, "base_pierce": 1, "Infantry": 0, "Unique Unit": 0}'><br>
-                Cost(<i>Food: value, Wood: value, Gold: value</i>)<br>
-                <input type="text" id="cost_unit_1" value='{"food":60, "wood":0, "gold":30}'><br>
-                LOS<br>
-                <input type="text" id="LOS_unit_1" value="3"><br>
-                Speed<br>
-                <input type="text" id="speed_unit_1" value="1"><br>
+                <div class= "selectorUnit">
+                    <label for="select_unit_1">Elegir unidad 1</label>
+                    <select name="select_unit_1" id="select_unit_1">
+                        <option value="null" selected="selected"></option>
+                        <optgroup label="Generic Melee Units">
+                            <option value="Long Swordsman">Long Swordsman</option>
+                          </optgroup>
+                          <optgroup label="Generic Ranged Units">
+                            <option value="Archer">Archer</option>
+                          </optgroup>
+                          <optgroup label="Unique Units">
+                            <option value="Jaguar Warrior">Jaguar Warrior</option>
+                          </optgroup>    
 
+                </select>
+            </div>
+            <div id="stats_unit_1">
+
+            </div>
 
                 
             </div>
@@ -43,26 +41,25 @@
         <div class="containerCajas">
             <div class="unitBox2">
                 <h3>Unidad 2</h3>
-                Nombre <br>
-                <input type="text" id="name_unit_2" value="Long Swordsman"><br>
-                HP<br>
-                <input type="text" id="hp_unit_2" value="60"><br>
-                Attack(<i>{"Class": value,...}</i>)<br>
-                <input type="text" id="attack_unit_2" value='{"melee": 9}'><br>
-                Bonus(<i>{"Class": value,...}</i>)<br>
-                <input type="text" id="bonus_unit_2" value='{"Eagle Warrior": 6, "Standard Building": 3}'><br>
-                ROF<br>
-                <input type="text" id="ROF_unit_2" value="2"><br>
-                Blast Radius<br>
-                <input type="text" id="blast_radius_unit_2" value="0"><br>
-                Armor classes(<i>{"Class": value,...}</i>)<br>
-                <input type="text" id="armorclasses_unit_2" value='{"base_melee":0, "base_pierce":1, "Infantry":0}'><br>
-                Cost(<i>Food: value, Wood: value, Gold: value</i>)<br>
-                <input type="text" id="cost_unit_2" value='{"food": 60, "wood":0, "gold": 20}'><br>
-                LOS<br>
-                <input type="text" id="LOS_unit_2" value="4"><br>
-                Speed<br>
-                <input type="text" id="speed_unit_2" value="0.9"><br>
+                <div class= "selectorUnit">
+                    <label for="select_unit_2">Elegir unidad 2</label>
+                    <select name="select_unit_2" id="select_unit_2">
+                        <option value="null" selected="selected"></option>
+                        <optgroup label="Generic Melee Units">
+                            <option value="Long Swordsman">Long Swordsman</option>
+                          </optgroup>
+                          <optgroup label="Generic Ranged Units">
+                            <option value="Archer">Archer</option>
+                          </optgroup>
+                          <optgroup label="Unique Units">
+                            <option value="Jaguar Warrior">Jaguar Warrior</option>
+                          </optgroup>    
+
+                </select>
+            </div>
+            <div id="stats_unit_2">
+
+            </div>
                 </div>
             </div>
         <div class="containerCajasResults">
@@ -93,6 +90,7 @@
     <script src="./clases.js"></script>
     <script src="./formulas_classes_input.js"></script>
     <script src="./unidades.js"></script>
+    <script src="./selector.js"></script>
 </body>
 
 </html>

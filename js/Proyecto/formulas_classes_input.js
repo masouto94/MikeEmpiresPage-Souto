@@ -99,36 +99,24 @@ const updater_input_value = (id_update, valor) =>{
 }
 // Se instancian las dos unidades para la prueba
 
+var selector_1 = document.getElementById("select_unit_1");
+var selector_2 = document.getElementById("select_unit_2");
 // Unidad 1
-let name_unit_1= document.getElementById("name_unit_1").value;
-let hp_unit_1= parseInt(document.getElementById("hp_unit_1").value);
-let attack_unit_1= JSON.parse(document.getElementById("attack_unit_1").value);
-let bonus_unit_1= JSON.parse(document.getElementById("bonus_unit_1").value);
-let ROF_unit_1= parseFloat(document.getElementById("ROF_unit_1").value);
-let blast_radius_unit_1= parseFloat(document.getElementById("blast_radius_unit_1").value);
-let armorclasses_unit_1= JSON.parse(document.getElementById("armorclasses_unit_1").value);
-let cost_unit_1= JSON.parse(document.getElementById("cost_unit_1").value);
-let LOS_unit_1= parseInt(document.getElementById("LOS_unit_1").value);
-let speed_unit_1= parseFloat(document.getElementById("speed_unit_1").value);
 
-var Jaguar_Warrior = new Melee_Unit(name_unit_1,hp_unit_1,attack_unit_1,bonus_unit_1,ROF_unit_1,blast_radius_unit_1,armorclasses_unit_1,cost_unit_1,LOS_unit_1,speed_unit_1);
+selector_1.onchange = function() {
+    var Unidad_1 = selector_1.options[selector_1.selectedIndex].value;
+    console.log(Unidad_1);
+    return Unidad_1;
+    };
 
 // Unidad 2
-let name_unit_2= document.getElementById("name_unit_2").value;
-let hp_unit_2= parseInt(document.getElementById("hp_unit_2").value);
-let attack_unit_2= JSON.parse(document.getElementById("attack_unit_2").value);
-let bonus_unit_2= JSON.parse(document.getElementById("bonus_unit_2").value);
-let ROF_unit_2= parseFloat(document.getElementById("ROF_unit_2").value);
-let blast_radius_unit_2= parseFloat(document.getElementById("blast_radius_unit_2").value);
-let armorclasses_unit_2= JSON.parse(document.getElementById("armorclasses_unit_2").value);
-let cost_unit_2= JSON.parse(document.getElementById("cost_unit_2").value);
-let LOS_unit_2= parseInt(document.getElementById("LOS_unit_2").value);
-let speed_unit_2= parseFloat(document.getElementById("speed_unit_2").value);
+selector_2.onchange = function() {
+    var Unidad_2 = selector_2.options[selector_2.selectedIndex].value;
+    console.log(Unidad_2);
+    return Unidad_2;
+    };
 
-var Long_Swordsman = new Melee_Unit(name_unit_2,hp_unit_2,attack_unit_2,bonus_unit_2,ROF_unit_2,blast_radius_unit_2,armorclasses_unit_2,cost_unit_2,LOS_unit_2,speed_unit_2);
 
-console.log(Jaguar_Warrior);
-console.log(Long_Swordsman);
 
 
 // Se identifica el elemento que va a tener un valor dinámico
@@ -143,15 +131,15 @@ var dano_1a2 = parseFloat(document.getElementById("resultado1").value);
 var dano_2a1 = parseFloat(document.getElementById("resultado2").value);
 
 
-var hp_sobre_dano_1a2 = Math.ceil(Long_Swordsman.hp / dano_1a2);
-var hp_sobre_dano_2a1 = Math.ceil(Jaguar_Warrior.hp / dano_2a1);
+var hp_sobre_dano_1a2 = Math.ceil(Unidad_2.hp / dano_1a2);
+var hp_sobre_dano_2a1 = Math.ceil(Unidad_1.hp / dano_2a1);
 
 if(hp_sobre_dano_1a2 < hp_sobre_dano_2a1){
-    reporte_1.innerHTML = `El ${Jaguar_Warrior.name} gana porque necesita ${hp_sobre_dano_1a2} golpes para ganar`;
-    reporte_2.innerHTML = `El ${Long_Swordsman.name} pierde porque necesita ${hp_sobre_dano_2a1} golpes para ganar`; 
+    reporte_1.innerHTML = `El ${Unidad_1.name} gana porque necesita ${hp_sobre_dano_1a2} golpes para ganar`;
+    reporte_2.innerHTML = `El ${Unidad_2.name} pierde porque necesita ${hp_sobre_dano_2a1} golpes para ganar`; 
 }else if(hp_sobre_dano_2a1 < hp_sobre_dano_1a2){
-    reporte_1.innerHTML = `El ${Jaguar_Warrior.name} pierde porque necesita ${hp_sobre_dano_1a2} golpes para ganar`;
-    reporte_2.innerHTML = `El ${Long_Swordsman.name} gana porque necesita ${hp_sobre_dano_2a1} golpes para ganar`; 
+    reporte_1.innerHTML = `El ${Unidad_1.name} pierde porque necesita ${hp_sobre_dano_1a2} golpes para ganar`;
+    reporte_2.innerHTML = `El ${Unidad_2.name} gana porque necesita ${hp_sobre_dano_2a1} golpes para ganar`; 
     
 }else if(hp_sobre_dano_1a2 == hp_sobre_dano_2a1) {
     reporte_1.innerHTML = `Las unidades empatan porque ambas necesitan ${hp_sobre_dano_1a2} para ganar`;
