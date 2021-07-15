@@ -95,26 +95,19 @@ const bonus = (atacante, defensor) => {
 
 const updater_input_value = (id_update, valor) =>{
     var campo = document.getElementById(id_update);
+
     campo.value = valor;
 }
 // Se instancian las dos unidades para la prueba
 
-var selector_1 = document.getElementById("select_unit_1");
-var selector_2 = document.getElementById("select_unit_2");
-// Unidad 1
+// const generador_variables_unidades = () =>{
+//     var Unidad_1 = JSON.parse(localStorage.getItem("U1"));
+//     var Unidad_2 = JSON.parse(localStorage.getItem("U2"));
+//     console.log(Unidad_1, Unidad_2);
+//     return Unidad_1, Unidad_2
+// }
 
-selector_1.onchange = function() {
-    var Unidad_1 = selector_1.options[selector_1.selectedIndex].value;
-    console.log(Unidad_1);
-    return Unidad_1;
-    };
 
-// Unidad 2
-selector_2.onchange = function() {
-    var Unidad_2 = selector_2.options[selector_2.selectedIndex].value;
-    console.log(Unidad_2);
-    return Unidad_2;
-    };
 
 
 
@@ -124,22 +117,22 @@ var reporte_1 = document.getElementById("reportBox1");
 var reporte_2 = document.getElementById("reportBox2");
 
 // Se coteja el daño contra el hp y se genera un reporte segun win o lose
-const reporte_output_pelea = () =>{
+const reporte_output_pelea = (u1, u2) =>{
 
 
 var dano_1a2 = parseFloat(document.getElementById("resultado1").value);
 var dano_2a1 = parseFloat(document.getElementById("resultado2").value);
 
 
-var hp_sobre_dano_1a2 = Math.ceil(Unidad_2.hp / dano_1a2);
-var hp_sobre_dano_2a1 = Math.ceil(Unidad_1.hp / dano_2a1);
+var hp_sobre_dano_1a2 = Math.ceil(u2.hp / dano_1a2);
+var hp_sobre_dano_2a1 = Math.ceil(u1.hp / dano_2a1);
 
 if(hp_sobre_dano_1a2 < hp_sobre_dano_2a1){
-    reporte_1.innerHTML = `El ${Unidad_1.name} gana porque necesita ${hp_sobre_dano_1a2} golpes para ganar`;
-    reporte_2.innerHTML = `El ${Unidad_2.name} pierde porque necesita ${hp_sobre_dano_2a1} golpes para ganar`; 
+    reporte_1.innerHTML = `El ${u1.name} gana porque necesita ${hp_sobre_dano_1a2} golpes para ganar`;
+    reporte_2.innerHTML = `El ${u2.name} pierde porque necesita ${hp_sobre_dano_2a1} golpes para ganar`; 
 }else if(hp_sobre_dano_2a1 < hp_sobre_dano_1a2){
-    reporte_1.innerHTML = `El ${Unidad_1.name} pierde porque necesita ${hp_sobre_dano_1a2} golpes para ganar`;
-    reporte_2.innerHTML = `El ${Unidad_2.name} gana porque necesita ${hp_sobre_dano_2a1} golpes para ganar`; 
+    reporte_1.innerHTML = `El ${u1.name} pierde porque necesita ${hp_sobre_dano_1a2} golpes para ganar`;
+    reporte_2.innerHTML = `El ${u2.name} gana porque necesita ${hp_sobre_dano_2a1} golpes para ganar`; 
     
 }else if(hp_sobre_dano_1a2 == hp_sobre_dano_2a1) {
     reporte_1.innerHTML = `Las unidades empatan porque ambas necesitan ${hp_sobre_dano_1a2} para ganar`;

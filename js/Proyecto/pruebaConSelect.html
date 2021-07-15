@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
     <title>Funciones</title>
 </head>
 
@@ -18,7 +24,7 @@
                 <div class= "selectorUnit">
                     <label for="select_unit_1">Elegir unidad 1</label>
                     <select name="select_unit_1" id="select_unit_1">
-                        <option value="null" selected="selected"></option>
+                        <option value="null"></option>
                         <optgroup label="Generic Melee Units">
                             <option value="Long Swordsman">Long Swordsman</option>
                           </optgroup>
@@ -44,7 +50,7 @@
                 <div class= "selectorUnit">
                     <label for="select_unit_2">Elegir unidad 2</label>
                     <select name="select_unit_2" id="select_unit_2">
-                        <option value="null" selected="selected"></option>
+                        <option value="null"></option>
                         <optgroup label="Generic Melee Units">
                             <option value="Long Swordsman">Long Swordsman</option>
                           </optgroup>
@@ -56,7 +62,9 @@
                           </optgroup>    
 
                 </select>
+                <button id="selector_units" onclick="completador_de_campos()">Elegir</button>
             </div>
+            
             <div id="stats_unit_2">
 
             </div>
@@ -67,7 +75,7 @@
                 <h3>Resultados</h3>
                 Resultado 1 ataca a 2 (daño)<br>
                 <input type="text" id="resultado1" value= "">
-                <button type="button" id= "button1" onclick="updater_input_value('resultado1',bonus(Jaguar_Warrior,Long_Swordsman));reporte_output_pelea();">Simular</button>
+                <button type="button" id= "button1" onclick="updater_input_value('resultado1',bonus(Unidad_1,Unidad_2));reporte_output_pelea(Unidad_1,Unidad_2);">Simular</button>
             </div>
             <div class= "reports" id="reportBox1"></div>
 
@@ -75,7 +83,7 @@
             <div class= "resultBox2">
                 Resultado 2 ataca a 1 (daño)<br>
                 <input type="text" id="resultado2" value= "">
-                <button type="button" id= "button2" onclick="updater_input_value('resultado2',bonus(Long_Swordsman,Jaguar_Warrior));reporte_output_pelea();">Simular</button>
+                <button type="button" id= "button2" onclick="updater_input_value('resultado2',bonus(Unidad_2,Unidad_1));reporte_output_pelea(Unidad_1,Unidad_2);">Simular</button>
             </div>
             <div class= "reports" id="reportBox2"></div>
         </div>
@@ -88,9 +96,11 @@
 
     </div>
     <script src="./clases.js"></script>
-    <script src="./formulas_classes_input.js"></script>
     <script src="./unidades.js"></script>
     <script src="./selector.js"></script>
+    <script src="./formulas_classes_input.js"></script>
+    
+
 </body>
 
 </html>
