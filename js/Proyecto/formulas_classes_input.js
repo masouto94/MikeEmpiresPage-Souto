@@ -60,18 +60,27 @@ upgrade_university = (unidad, mejoras) =>{
 
 // Función para capturar el resultado del ataque menos la armadura. El mínimo es 1
 const ataqueResultado = (atacante, defensor) => {
-    if(atacante.attack.melee-defensor.armorclasses[0].base_melee > 0){
-        var resultado =  atacante.attack.melee-defensor.armorclasses[0].base_melee;
-    }else if(atacante.attack.pierce-defensor.armorclasses[0].base_pierce <= 0){
-        var resultado =  atacante.attack.pierce-defensor.armorclasses[0].base_pierce;
 
-    }
-    else{
-        var resultado = 1
-    }
-    return resultado};
+        if(atacante.attack.hasOwnProperty("melee") == true){
+            if(atacante.attack.melee-defensor.armorclasses[0].base_melee > 0){
+            var resultado =  atacante.attack.melee-defensor.armorclasses[0].base_melee}
+            else{
+                var resultado = 1
+            }
+        };
+        if(atacante.attack.hasOwnProperty("pierce") == true){
+            if(atacante.attack.pierce-defensor.armorclasses[0].base_pierce > 0){
+            var resultado =  atacante.attack.pierce-defensor.armorclasses[0].base_pierce}
+            else{
+                var resultado = 1
+            }
+        }
+
     
-    
+       
+
+    return resultado
+        }
 
 // Función para calcular el bonus según la armor class y aplicar la función del resultado del ataque
 const bonus = (atacante, defensor) => {
@@ -98,18 +107,6 @@ const updater_input_value = (id_update, valor) =>{
 
     campo.value = valor;
 }
-// Se instancian las dos unidades para la prueba
-
-// const generador_variables_unidades = () =>{
-//     var Unidad_1 = JSON.parse(localStorage.getItem("U1"));
-//     var Unidad_2 = JSON.parse(localStorage.getItem("U2"));
-//     console.log(Unidad_1, Unidad_2);
-//     return Unidad_1, Unidad_2
-// }
-
-
-
-
 
 
 // Se identifica el elemento que va a tener un valor dinámico

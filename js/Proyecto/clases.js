@@ -23,8 +23,8 @@ class Melee_Unit extends Unit{
 };
 
 class Ranged_Unit extends Unit{
-    constructor(range, accuracy, frame_delay, min_range, projectile_speed){
-    super();
+    constructor(name, hp, attack,  bonus, ROF,blast_radius, armorclasses, cost, LOS,speed, range, accuracy, frame_delay, min_range, projectile_speed){
+    super(name, hp, attack,  bonus, ROF,blast_radius, armorclasses, cost, LOS,speed);
     this.range = range;
     this.accuracy = accuracy;
     this.frame_delay = frame_delay;
@@ -72,3 +72,4 @@ class University{
         this.chemistry = false;
     }
 };
+
