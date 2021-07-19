@@ -1,8 +1,8 @@
+$color-de-fondo-matchups: #b7b53c;
+
 .mainContainer{
-    display: grid;
-    grid-template-areas: "a b c"
-                         "d d d";
-    background-color: #ff9321;
+
+    background-color: $color-de-fondo-matchups;
     border-style: solid;
     border-radius: 19px;
 

@@ -7,6 +7,16 @@
     grid-template-areas:"menu content content ." ". content content ." "footer footer footer footer";
 }
 
+
+// Grilla del matchups
+.grid_matchups{
+	display: grid;
+	grid-template-areas: "a b c"
+	                     "d d d";
+}
+
+
+
 // Grilla de las civs
 
 

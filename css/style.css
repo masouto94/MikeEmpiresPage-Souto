@@ -36,6 +36,10 @@
   grid-template-columns: 12.5% 31.75% 31.75% 25%;
   grid-template-areas: "menu content content ." ". content content ." "footer footer footer footer"; }
 
+.grid_matchups {
+  display: grid;
+  grid-template-areas: "a b c" "d d d"; }
+
 .gridCiv {
   display: grid;
   grid-template-columns: repeat(10, 150px);
@@ -760,3 +764,57 @@ iframe {
     grid-area: content;
     width: 100%;
     justify-content: left; } }
+
+.mainContainer {
+  background-color: #b7b53c;
+  border-style: solid;
+  border-radius: 19px; }
+
+.containerCajas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.containerCajasResults {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: c; }
+
+.unitBox1 {
+  margin-top: 10%;
+  margin-left: 10%;
+  grid-area: a; }
+
+.unitBox2 {
+  margin-top: 10%;
+  margin-left: 10%;
+  grid-area: b; }
+
+.resultBox1 {
+  align-items: center;
+  flex-direction: column;
+  display: flex; }
+
+.resultBox2 {
+  align-items: center;
+  flex-direction: column;
+  display: flex; }
+
+.explicacion {
+  margin: 10%;
+  grid-area: d;
+  text-align: justify;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px; }
+
+.reports {
+  margin: 10px 0px;
+  text-align: center;
+  font-family: monospace; }
+
+select {
+  margin-bottom: 10px; }
+
+#selector_units {
+  grid-area: a; }

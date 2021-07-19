@@ -8,6 +8,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="../css/style.css">
+	    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
 	<title>Matchups</title>
 </head>
 <body class="body indexBody">
@@ -49,34 +54,96 @@
 				</li>
 			</ul>
 		</nav>
-			<div class= "mainContainer" >
-				<table class="unitComparator table-info">  <colgroup span="2" class="columns">
-				</colgroup>
-					<th>(Unit 1)</th>
-					<th>Stat</th>
-					<th>(Unit 2)</th>
-					  <tr>
-						<td>100</td>
-						<td>HP</td>
-						<td>80</td>
-					</tr>
-					<tr>
-						<td>10</td>
-						<td>Attack</td>
-						<td>12</td>
-					</tr>
-					<tr>
-						<td>2.0</td>
-						<td>ROF</td>
-						<td>1.9</td>
-					</tr>
-				</table>
-			
-				<div class= "tableDescription">
-					<p>Acá va algún input para probar casos y los resultados</p>
+			<div class= "mainContainer grid_matchups" >
+				<div class="containerCajas">
+
+					<div class="unitBox1">
+						<h3>Unidad 1</h3>
+						<button id="selector_units1" onclick="completador_de_campos_1();">Elegir</button>
+
+						<div class= "selectorUnit">
+							<label for="select_unit_1">Elegir unidad 1</label>
+							<select name="select_unit_1" id="select_unit_1">
+								<option value="null"></option>
+								<optgroup label="Generic Melee Units">
+									<option value="Long Swordsman">Long Swordsman</option>
+								  </optgroup>
+								  <optgroup label="Generic Ranged Units">
+									<option value="Archer">Archer</option>
+								  </optgroup>
+								  <optgroup label="Unique Units">
+									<option value="Jaguar Warrior">Jaguar Warrior</option>
+								  </optgroup>    
+		
+						</select>
 					</div>
+					<div id="stats_unit_1">
+		
+					</div>
+		
+						
+					</div>
+				</div>
+				<div class="containerCajas">
+					<div class="unitBox2">
+						<h3>Unidad 2</h3>
+						<button id="selector_units2" onclick="completador_de_campos_2();">Elegir</button>
+
+						<div class= "selectorUnit">
+							<label for="select_unit_2">Elegir unidad 2</label>
+							<select name="select_unit_2" id="select_unit_2">
+								<option value="null"></option>
+								<optgroup label="Generic Melee Units">
+									<option value="Long Swordsman">Long Swordsman</option>
+								  </optgroup>
+								  <optgroup label="Generic Ranged Units">
+									<option value="Archer">Archer</option>
+								  </optgroup>
+								  <optgroup label="Unique Units">
+									<option value="Jaguar Warrior">Jaguar Warrior</option>
+								  </optgroup>    
+		
+						</select>
+					</div>
+					
+					<div id="stats_unit_2">
+		
+					</div>
+						</div>
+					</div>
+				<div class="containerCajasResults">
+					<div class= "resultBox1">
+						<h3>Resultados</h3>
+						Resultado 1 ataca a 2 (daño)<br>
+						<input type="text" id="resultado1" value= "">
+						<button type="button" id= "button1" onclick="updater_input_value('resultado1',bonus(Unidad_1,Unidad_2));reporte_output_pelea(Unidad_1,Unidad_2);">Simular</button>
+					</div>
+					<div class= "reports" id="reportBox1"></div>
+		
+		
+					<div class= "resultBox2">
+						Resultado 2 ataca a 1 (daño)<br>
+						<input type="text" id="resultado2" value= "">
+						<button type="button" id= "button2" onclick="updater_input_value('resultado2',bonus(Unidad_2,Unidad_1));reporte_output_pelea(Unidad_1,Unidad_2);">Simular</button>
+						<button id="reset" type="reset" onclick="limpiador();" >Reset</button>
+
+					</div>
+					<div class= "reports" id="reportBox2"></div>
+				</div>
+				<div class="explicacion"><p>Esta página es el primer abordaje de un simulador de batallas para el Age of Empires 2. <br>
+					El cálculo toma los valores de ataque (melee o de rango) y le resta el valor de defensa correspondiente. Si el resultado es 0 o menos, se imputa 1. <br>
+					Una vez obtenido este valor, se tienen que sumar las diferencias del valor de los <i>bonus</i> con las respectivas <i>armor classes</i>, si las hubiere. <br>
+					Por ejemplo: Si el valor de ataque melee de la unidad 1 es <b>10</b> y la armadura melee de la unidad 2 es <b>1</b>, el subtotal será 9. Si la unidad 1 tiene <br>
+					<i>bonus</i> de <b>+10</b> contra <b>Infantry</b> y la unidad 2 tiene la <i>armor class</i> "<b>Infantry</b>" con el valor 0 (valor por defecto), la unidad 1 causará 19 de daño a la unidad 2 <br>
+				</p></div>
+		
 			</div>
-			</div>
+		
+			<script src="../js/clases.js"></script>
+			<script src="../js/unidades.js"></script>
+			<script src="../js/selector.js"></script>
+			<script src="../js/formulas_classes_input.js"></script>
+			
 	<div class="divFooter">
 		<footer id= "footer">
 			<p><b>Send us an email</b></p>
