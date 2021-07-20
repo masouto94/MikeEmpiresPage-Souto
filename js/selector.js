@@ -8,6 +8,7 @@ const limpiador = () =>{
     units_dinamico_2.innerHTML = "";
     document.getElementById('select_unit_1').selectedIndex = 0;
     document.getElementById('select_unit_2').selectedIndex = 0;
+    
 
 }
 const limpiador_de_texto = (texto) =>{
@@ -138,5 +139,20 @@ document.getElementById("speed_unit_2").value = Unidad_2.speed;
 return  Unidad_2
 };
 
+// Elementos a ocultar a cargar la página
+
+$(document).ready(function (){
+    $("#reset").hide();
+    $(".containerCajasResults").hide();
+;
 
 
+$("button").click(function() {
+    $(".containerCajasResults").show();
+    $("#reset").show();
+  });
+
+$("#reset").click(function(){
+    $(".containerCajasResults").hide();
+});
+})
