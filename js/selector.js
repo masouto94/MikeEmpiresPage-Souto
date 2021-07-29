@@ -523,10 +523,7 @@ const upgrader_unidad = () =>{
                     $("#armorclasses_unit_2").val(limpiador_de_texto(JSON.stringify(Unidad_2.armorclasses[0])));
                     break;
                 }
-
+            }
+        })
     }
-}
-)
-}
-
 }
