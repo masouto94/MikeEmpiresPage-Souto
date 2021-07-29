@@ -105,7 +105,7 @@ for i,j in zip(unit_names,files):
 							<input type="radio" name="patron" value="no" />\n\
 							</div>\n\
 							<div id= "Submits">\n\
-							<input type="submit" value="Send"/>\n\
+							<input type="submit" id="send" value="Send"/>\n\
 							<input id="Reset" type="reset" value="Reset"/>\n\
 							</div>\n\
 						</form>\n\

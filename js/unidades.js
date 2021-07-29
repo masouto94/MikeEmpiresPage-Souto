@@ -2,3 +2,8 @@ var Jaguar_Warrior = new Melee_Unit("Jaguar Warrior", 50, {"melee": 10}, {"Infan
 var Long_Swordsman = new Melee_Unit("Long Swordsman", 60, {"melee": 9}, {"Eagle Warrior": 6, "Standard Building": 3}, 2, 0, {"base_melee":0, "base_pierce":1, "Infantry":0}, {"food": 60, "gold": 20}, 4, 0.9);
 var Archer = new Ranged_Unit("Archer", 30, {"pierce": 4}, {"Spearman": 2}, 2, 0, {"base_melee":0, "base_pierce":0, "Archer":0}, {"wood": 25, "gold":45}, 6, 0.96, 4,0.8,15,0,7);
 array_unidades = [Jaguar_Warrior, Long_Swordsman, Archer];
+
+// pensar una funcionalidad nueva que requiera poner un json. Quizás algo con el simulador, algo con una foto, o algo asi. Puede ser para el grid de las civs.
+// Probar de nuevo haciendo un json desde 0 con esos datos
+// En última instancia hacerlo con el formulario de envio
+

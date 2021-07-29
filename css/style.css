@@ -33,18 +33,22 @@
 .grid {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 12.5% 31.75% 31.75% 25%;
-  grid-template-areas: "menu content content ." ". content content ." "footer footer footer footer"; }
+  grid-template-columns: auto;
+  grid-template-areas: "menu content content content" ". content content content" "footer footer footer footer"; }
 
 .grid_matchups {
   display: grid;
-  grid-template-areas: "a b c" "d d d"; }
+  grid-template-areas: "a b c"
+ "d d d"; }
 
 .gridCiv {
   display: grid;
   grid-template-columns: repeat(10, 150px);
   grid-template-rows: repeat(4, 100px);
-  grid-template-areas: " 1 1 1 1 1 1 1 1 1 1" " 2 2 2 2 2 2 2 2 2 2" " 3 3 3 3 3 3 3 3 3 3" " 4 4 4 4 4 4 4 4 4 4";
+  grid-template-areas: " 1 1 1 1 1 1 1 1 1 1"
+ " 2 2 2 2 2 2 2 2 2 2"
+ " 3 3 3 3 3 3 3 3 3 3"
+ " 4 4 4 4 4 4 4 4 4 4";
   justify-content: left;
   margin: 10px;
   overflow: auto; }
@@ -486,12 +490,18 @@
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 100%;
-    grid-template-areas: "menu" "content" "content" "footer"; }
+    grid-template-areas: "menu"
+ "content"
+ "content"
+ "footer"; }
   .gridCiv {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(20, 5%);
-    grid-template-areas: " 1 1" " 2 2" " 3 3" " 4 4";
+    grid-template-areas: " 1 1"
+ " 2 2"
+ " 3 3"
+ " 4 4";
     justify-content: center;
     flex-direction: column;
     margin: 10px;
@@ -773,7 +783,8 @@ iframe {
 .containerCajas {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin:10%; }
 
 .containerCajasResults {
   display: flex;
@@ -813,8 +824,21 @@ iframe {
   text-align: center;
   font-family: monospace; }
 
-select {
-  margin-bottom: 10px; }
 
 #selector_units {
   grid-area: a; }
+#selector_units_div{
+  text-align: unset;
+  justify-content: center;
+  display: flex;
+  margin-left: 18.5%;
+}
+#upgrades_1 img, #upgrades_2 img{
+  opacity: 0.5;
+
+}
+
+.containerCajasResults p{
+  text-align: center;
+  font-weight: thin
+}

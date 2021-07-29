@@ -13,6 +13,7 @@ $color-de-fondo-matchups: #b7b53c;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin:10%; 
 }
 
 .containerCajasResults{
@@ -57,10 +58,29 @@ $color-de-fondo-matchups: #b7b53c;
     font-family: monospace;
 }
 
-select{
-    margin-bottom: 10px;
-}
+
 
 #selector_units{
     grid-area: a;
 }
+
+.selectorUnit{
+    line-height: 1.5;
+}
+
+#selector_units_div{
+    text-align: unset;
+    justify-content: center;
+    display: flex;
+    margin-left: 18.5%;
+  }
+  #upgrades_1 img, #upgrades_2 img{
+    opacity: 0.5;
+  
+  }
+  
+.containerCajasResults p{
+  text-align: center;
+  font-weight: thin
+}
+  

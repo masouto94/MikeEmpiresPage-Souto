@@ -35,41 +35,42 @@ class Ranged_Unit extends Unit{
 
 class Blacksmith{
     constructor(melee_attack, ranged_attack, infantry_defense, cavalry_defense, archer_defense){
-        this.melee_attack=0;
-        this.ranged_attack= [0,0];
-        this.infantry_defense= [0,0];
-        this.cavalry_defense= [0,0];
-        this.archer_defense= [0,0];
+        this.melee_attack=melee_attack || 0;
+        this.ranged_attack= [ranged_attack] || [0,0];
+        this.infantry_defense= [infantry_defense] || [0,0];
+        this.cavalry_defense= [cavalry_defense] || [0,0];
+        this.archer_defense= [archer_defense] || [0,0];
     }
 }
 
 class Barracks{
     constructor(supplies, squires, arsoning){
-        this.supplies = false;
-        this.squires = false;
-        this.arsoning = false;
+        this.supplies = supplies || false;
+        this.squires = squires || false;
+        this.arsoning = arsoning || false;
     }
 }
 
 class Stable{
     constructor(bloodlines, husbandry){
-        this.bloodlines = false;
-        this.husbandry = false;
+        this.bloodlines = bloodlines || false;
+        this.husbandry = husbandry || false;
     }
 }
 
 class ArcheryRange{
     constructor(thumbring, parthian_tactics){
-        this.thumbring = false;
-        this.parthian_tactics = false;
+        this.thumbring = thumbring || false;
+        this.parthian_tactics = parthian_tactics || false;
     }
 }
 
 class University{
     constructor(ballistics, siege_engineers, chemistry){
-        this.ballistics = false;
-        this.siege_engineers = false;
-        this.chemistry = false;
+        this.ballistics = ballistics || false;
+        this.siege_engineers = siege_engineers || false;
+        this.chemistry = chemistry || false;
     }
 };
+
 
