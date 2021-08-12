@@ -122,3 +122,19 @@ justify-content: left;
 
 }
 }
+
+.table-active{
+	border-style: groove;
+    margin-top: 10%;
+}
+.table-active th{
+      text-align: right;
+    padding-right: 15%;
+	border-style: groove;
+	border-color: darkolivegreen;
+}
+
+.table-active td{
+	border-style: groove;
+    border-color: darkolivegreen
+}

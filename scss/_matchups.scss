@@ -1,5 +1,5 @@
 $color-de-fondo-matchups: #b7b53c;
-
+$margen-chico: 10%;
 .mainContainer{
 
     background-color: $color-de-fondo-matchups;
@@ -13,7 +13,7 @@ $color-de-fondo-matchups: #b7b53c;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin:10%; 
+    margin:$margen-chico; 
 }
 
 .containerCajasResults{
@@ -23,14 +23,14 @@ $color-de-fondo-matchups: #b7b53c;
     grid-area: c;
 }
 .unitBox1{
-    margin-top: 10%;
-    margin-left: 10%;
+    margin-top: $margen-chico;
+    margin-left: $margen-chico;
     grid-area: a;
 }
 
 .unitBox2{
-    margin-top: 10%;
-    margin-left: 10%;
+    margin-top: $margen-chico;
+    margin-left: $margen-chico;
     grid-area: b;
 }
 
@@ -45,7 +45,7 @@ $color-de-fondo-matchups: #b7b53c;
     display: flex;
 }
 .explicacion{
-    margin: 10%;
+    margin: $margen-chico;
     grid-area: d;
     text-align: justify;
     font-family: 'Courier New', Courier, monospace;
@@ -72,10 +72,19 @@ $color-de-fondo-matchups: #b7b53c;
     text-align: unset;
     justify-content: center;
     display: flex;
-    margin-left: 18.5%;
+    margin-left: inherit;
+    margin-top: $margen-chico;
   }
+
+  #upgrades_1, #upgrades_2{
+  margin: $margen-chico;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
   #upgrades_1 img, #upgrades_2 img{
     opacity: 0.5;
+    border-style: outset;
   
   }
   

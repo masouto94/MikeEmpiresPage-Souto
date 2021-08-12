@@ -1,12 +1,15 @@
 
 const upgrade_blacksmith = (unidad, mejoras) => {
-	if(unidad.type =="Melee_Unit")
-	{unidad.attack.melee = unidad.attack.melee + mejoras.melee_attack;
+	if(unidad.type =="Melee_Unit"){
+		if("Infantry" || "Cavalry" || "Camel" in unidad.armorclasses[0] && mejoras.melee_attack != 0){
+		unidad.attack.melee = unidad.attack.melee + mejoras.melee_attack};
 	
-	if("Infantry" in unidad.armorclasses[0] && mejoras.infantry_defense != 0){
-	unidad.armorclasses[0].base_melee = unidad.armorclasses[0].base_melee + mejoras.infantry_defense[0][0];
-	unidad.armorclasses[0].base_pierce = unidad.armorclasses[0].base_pierce + mejoras.infantry_defense[0][1];
-	}else if("Cavalry || Camel" in unidad.armorclasses[0]){
+		if("Infantry" in unidad.armorclasses[0] && mejoras.infantry_defense != 0){
+			unidad.armorclasses[0].base_melee = unidad.armorclasses[0].base_melee + mejoras.infantry_defense[0][0];
+			unidad.armorclasses[0].base_pierce = unidad.armorclasses[0].base_pierce + mejoras.infantry_defense[0][1];
+		};
+
+		if(("Cavalry" || "Camel") in unidad.armorclasses[0] ==true && mejoras.cavalry_defense != 0){
 		unidad.armorclasses[0].base_melee = unidad.armorclasses[0].base_melee + mejoras.cavalry_defense[0][0];
 		unidad.armorclasses[0].base_pierce = unidad.armorclasses[0].base_pierce + mejoras.cavalry_defense[0][1];
 		};

@@ -9,7 +9,7 @@ class Unit{
         this.blast_radius=blast_radius
         this.armorclasses=[armorclasses]
         this.armorclasses.push({'Anti-Leitis' : 0})
-        this.cost=cost
+        this.cost=[cost]
         this.LOS = LOS
         this.speed = speed
     }
@@ -72,5 +72,4 @@ class University{
         this.chemistry = chemistry || false;
     }
 };
-
 
