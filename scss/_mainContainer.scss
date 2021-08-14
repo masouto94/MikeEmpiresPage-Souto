@@ -9,7 +9,10 @@ a{
 
 
 $fuente-principal:'Shippori Mincho B1', serif;
-$color-de-fondo: #c2c040;
+$color-de-fondo: #05666C;
+$color-de-titulo: #F8F8FA;
+$color-de-fuente: #000000;
+
 
 .body{
 	font-family: $fuente-principal;
@@ -26,6 +29,7 @@ $margen-grande: 50px;
 	font-family: $fuente-principal;
 	font-weight: bold;
 	text-align: center;
+	color: $color-de-titulo;
 
 }
 .h2{
@@ -35,6 +39,7 @@ $margen-grande: 50px;
 	margin-bottom: $margen-grande;
 	text-align:  left;
 	grid-area:titulo;
+	color: $color-de-fuente;
 
 }
 
@@ -43,6 +48,7 @@ $margen-grande: 50px;
 	margin-top: $margen-chico;
 	margin-bottom: $margen-grande;
 	justify-content: left;
+	color: $color-de-fuente;
 }
 
 .h4{
@@ -50,6 +56,7 @@ $margen-grande: 50px;
 	margin-top: $margen-chico;
 	margin-bottom: $margen-grande;
 	justify-content: left;
+	color: $color-de-fuente;
 }
 
 .mainContainer{

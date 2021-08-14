@@ -1,5 +1,5 @@
-$color-de-fondo-matchups: #b7b53c;
-$margen-chico: 10%;
+$color-de-fondo-matchups: #FFB84C;
+$margen-chico: 1em;
 .mainContainer{
 
     background-color: $color-de-fondo-matchups;
@@ -77,7 +77,7 @@ $margen-chico: 10%;
   }
 
   #upgrades_1, #upgrades_2{
-  margin: $margen-chico;
+  margin: 1em 2em 1em 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
