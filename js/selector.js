@@ -2,8 +2,8 @@
 const limpiador = () =>{
     updater_input_value('resultado1', "");
     updater_input_value('resultado2', "");
-    reporte_1.html("");
-    reporte_2.html("");
+    reporte_1.slideUp().html("");
+    reporte_2.slideUp().html("");
     units_dinamico_1.html("");
     units_dinamico_2.html("");
     $("#select_unit_1").prop('selectedIndex', 0);
