@@ -79,6 +79,17 @@
   background-color: #FFB84C;
   margin: 2px; }
 
+.BohemiansIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #FFB84C;
+  margin: 2px; }
+
 .BritonsIcon {
   list-style: none;
   grid-area: auto;
@@ -344,6 +355,17 @@
   margin: 2px; }
 
 .PersiansIcon {
+  list-style: none;
+  grid-area: auto;
+  text-align: center;
+  border: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  background-color: #FFB84C;
+  margin: 2px; }
+
+.PolesIcon {
   list-style: none;
   grid-area: auto;
   text-align: center;
