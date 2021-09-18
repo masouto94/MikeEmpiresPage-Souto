@@ -1,0 +1,69 @@
+{
+  "head": {
+    "title": "",
+    "meta": [],
+    "link": [],
+    "script": []
+  },
+  "headers": [],
+  "jsonLd": [],
+  "forms": [
+    {
+      "attr": {
+        "method": "post",
+        "action": ""
+      },
+      "fields": [
+        {
+          "node": "input",
+          "name": "patron",
+          "attr": {
+            "type": "radio",
+            "name": "patron",
+            "value": "yes"
+          }
+        },
+        {
+          "node": "input",
+          "name": "patron",
+          "attr": {
+            "type": "radio",
+            "name": "patron",
+            "value": "no"
+          }
+        },
+        {
+          "node": "input",
+          "name": "",
+          "attr": {
+            "type": "submit",
+            "value": "Send"
+          }
+        },
+        {
+          "node": "input",
+          "name": "",
+          "attr": {
+            "id": "Reset",
+            "type": "reset",
+            "value": "Reset"
+          }
+        },
+        {
+          "node": "select",
+          "name": "country",
+          "attr": {
+            "name": "country"
+          }
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "iframes": [],
+  "embeds": [],
+  "imgs": [],
+  "links": [],
+  "content": "Argentina\nBrasil\nOther\nAre you a patron/channel member?\nYes\nNo",
+  "datetime": null
+}

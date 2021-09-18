@@ -33,8 +33,12 @@
 .grid {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 12.5% 31.75% 31.75% 25%;
-  grid-template-areas: "menu content content ." ". content content ." "footer footer footer footer"; }
+  grid-template-columns: auto;
+  grid-template-areas: "menu content content content" ". content content content" "footer footer footer footer"; }
+
+.grid_matchups {
+  display: grid;
+  grid-template-areas: "a b c" "d d d"; }
 
 .gridCiv {
   display: grid;
@@ -61,7 +65,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .BerbersIcon {
@@ -72,7 +76,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .BritonsIcon {
@@ -83,7 +87,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .BulgariansIcon {
@@ -94,7 +98,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .BurgundiansIcon {
@@ -105,7 +109,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .BurmeseIcon {
@@ -116,7 +120,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .ByzantinesIcon {
@@ -127,7 +131,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .CeltsIcon {
@@ -138,7 +142,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .ChineseIcon {
@@ -149,7 +153,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .CumansIcon {
@@ -160,7 +164,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .EthiopiansIcon {
@@ -171,7 +175,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .FranksIcon {
@@ -182,7 +186,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .GothsIcon {
@@ -193,7 +197,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .HunsIcon {
@@ -204,7 +208,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .IncasIcon {
@@ -215,7 +219,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .IndiansIcon {
@@ -226,7 +230,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .ItaliansIcon {
@@ -237,7 +241,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .JapaneseIcon {
@@ -248,7 +252,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .KhmerIcon {
@@ -259,7 +263,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .KoreansIcon {
@@ -270,7 +274,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .LithuaniansIcon {
@@ -281,7 +285,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .MagyarsIcon {
@@ -292,7 +296,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .MalayIcon {
@@ -303,7 +307,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .MaliansIcon {
@@ -314,7 +318,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .MayansIcon {
@@ -325,7 +329,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .MongolsIcon {
@@ -336,7 +340,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .PersiansIcon {
@@ -347,7 +351,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .PortugueseIcon {
@@ -358,7 +362,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .SaracensIcon {
@@ -369,7 +373,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .SiciliansIcon {
@@ -380,7 +384,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .SlavsIcon {
@@ -391,7 +395,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .SpanishIcon {
@@ -402,7 +406,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .TatarsIcon {
@@ -413,7 +417,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .TeutonsIcon {
@@ -424,7 +428,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .TurksIcon {
@@ -435,7 +439,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .VietnameseIcon {
@@ -446,7 +450,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .VikingsIcon {
@@ -457,7 +461,7 @@
   border-width: 5px;
   border-color: black;
   border-style: double;
-  background-color: #fee134;
+  background-color: #FFB84C;
   margin: 2px; }
 
 .gridListaUnidades {
@@ -526,12 +530,12 @@
   width: 24%; }
 
 .linkIndex, .linkNav {
-  color: black;
+  color: #0057E9;
   font-weight: bold;
   border-style: outset;
   border-width: thick;
   border-color: #585503a8;
-  background-color: yellow;
+  background-color: #FFB84C;
   display: inline; }
 
 .linkIndex:hover {
@@ -547,12 +551,13 @@ a {
 
 .body {
   font-family: "Shippori Mincho B1", serif;
-  background-color: #c2c040; }
+  background-color: #05666C; }
 
 .h1 {
   font-family: "Shippori Mincho B1", serif;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  color: #F8F8FA; }
 
 .h2 {
   font-family: "Shippori Mincho B1", serif;
@@ -560,19 +565,22 @@ a {
   margin-left: 10px;
   margin-bottom: 50px;
   text-align: left;
-  grid-area: titulo; }
+  grid-area: titulo;
+  color: #000000; }
 
 .h3 {
   font-family: "Shippori Mincho B1", serif;
   margin-top: 10px;
   margin-bottom: 50px;
-  justify-content: left; }
+  justify-content: left;
+  color: #000000; }
 
 .h4 {
   font-family: "Shippori Mincho B1", serif;
   margin-top: 10px;
   margin-bottom: 50px;
-  justify-content: left; }
+  justify-content: left;
+  color: #000000; }
 
 .mainContainer {
   margin: 10px 5px;
@@ -608,7 +616,7 @@ iframe {
   border-style: solid;
   border-color: black;
   float: right;
-  background-color: #f7d15e;
+  background-color: #FFB84C;
   display: block; }
 
 .navbar {
@@ -625,7 +633,7 @@ iframe {
 .menuTitle {
   border-style: solid;
   border-color: black;
-  background-color: #fee134;
+  background-color: #FFB84C;
   width: 155px; }
 
 .menuItem {
@@ -634,7 +642,7 @@ iframe {
   display: block;
   border-style: solid;
   position: inherit;
-  background-color: #fee134;
+  background-color: #FFB84C;
   transition: background-color 1s; }
 
 .menuItem:hover {
@@ -760,3 +768,97 @@ iframe {
     grid-area: content;
     width: 100%;
     justify-content: left; } }
+
+.table-active {
+  border-style: groove;
+  margin-top: 1em; }
+
+.table-active th {
+  text-align: right;
+  padding-right: 15%;
+  border-style: groove;
+  background-color: #05666C;
+  border-color: #FFFFFF;
+  color: #F8F8FA; }
+
+.table-active td {
+  border-style: groove;
+  background-color: #F8F8FA;
+  border-color: #FFFFFF;
+  white-space: pre; }
+
+.mainContainer {
+  background-color: #FFB84C;
+  border-style: solid;
+  border-radius: 19px; }
+
+.containerCajas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1em; }
+
+.containerCajasResults {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: c; }
+
+.unitBox1 {
+  margin-top: 1em;
+  margin-left: 1em;
+  grid-area: a; }
+
+.unitBox2 {
+  margin-top: 1em;
+  margin-left: 1em;
+  grid-area: b; }
+
+.resultBox1 {
+  align-items: center;
+  flex-direction: column;
+  display: flex; }
+
+.resultBox2 {
+  align-items: center;
+  flex-direction: column;
+  display: flex; }
+
+.explicacion {
+  margin: 1em;
+  grid-area: d;
+  text-align: justify;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px; }
+
+.reports {
+  margin: 10px 0px;
+  text-align: center;
+  font-family: monospace; }
+
+#selector_units {
+  grid-area: a; }
+
+.selectorUnit {
+  line-height: 1.5; }
+
+#selector_units_div {
+  text-align: unset;
+  justify-content: center;
+  display: flex;
+  margin-left: inherit;
+  margin-top: 1em; }
+
+#upgrades_1, #upgrades_2 {
+  margin: 1em 2em 1em 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+#upgrades_1 img, #upgrades_2 img {
+  opacity: 0.5;
+  border-style: outset; }
+
+.containerCajasResults p {
+  text-align: center;
+  font-weight: thin; }

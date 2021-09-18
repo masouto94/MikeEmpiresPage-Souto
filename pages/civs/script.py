@@ -96,7 +96,7 @@ for i in civs:
 							<input type="radio" name="patron" value="no" />\n\
 							</div>\n\
 							<div id= "Submits">\n\
-							<input type="submit" value="Send"/>\n\
+							<input type="submit" id="send"  value="Send"/>\n\
 							<input id="Reset" type="reset" value="Reset"/>\n\
 							</div>\n\
 						</form>\n\

@@ -1,3 +1,5 @@
+$main-item-background-color: #FFB84C;
+
 .menuListaBox{
 	border: 5px;
 	margin-top: 10px;
@@ -13,7 +15,7 @@
 	border-style: solid;
 	border-color: black;
 	float: right;
-	background-color: #f7d15e;
+	background-color: $main-item-background-color;
 	display: block;
 
 }
@@ -35,7 +37,7 @@
 .menuTitle{
 	border-style: solid;
 	border-color: black;
-	background-color:#fee134 ;
+	background-color:$main-item-background-color ;
 	width: 155px;
 }
 .menuItem{
@@ -45,7 +47,7 @@
 	display: block;
 	border-style: solid;
 	position: inherit;
-	background-color:#fee134 ;
+	background-color:$main-item-background-color ;
 	transition: background-color 1s
 
 }

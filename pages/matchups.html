@@ -6,12 +6,14 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 	<link rel="stylesheet" href="../css/style.css">
+	<script
+	src="https://code.jquery.com/jquery-3.6.0.js"
+	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	crossorigin="anonymous"></script>
 	<title>Matchups</title>
 </head>
 <body class="body indexBody">
-
 	<header>
 		<div class= menuImage>
 			<nav class="menuMenu">  <ul>
@@ -26,84 +28,152 @@
 				</li>
 				<li class= "itemIndex">
 					<a class= "linkNav" href="#footer">Contact</a>
-				</li>  </ul>
-			</nav> </div>
-		</header>
-			<h1 class="h1">Make your own matchups</h1>
-		<div class= "grid">
-		<nav class="navbar justify-content-center">
-
-			<ul class= "navbar-nav ">
-				<li class="menuTitle"><p><b>Menu</b></p></li>
-				<li class= "menuItem nav-item">
-					<a class= "menuIndex nav-link" href="./civilizations.html">Civilizations</a>
-				</li>
-				<li class= "menuItem nav-item">
-					<a class= "menuIndex nav-link" href="./units.html">Units</a>
-				</li>
-				<li class= "menuItem nav-item">
-					<a class= "menuIndex nav-link" href="./matchups.html">Matchups</a>
-				</li>
-				<li class= "menuItem nav-item">
-					<a class= "menuIndex nav-link" href="./tests.html">Tests</a>
 				</li>
 			</ul>
 		</nav>
-			<div class= "mainContainer" >
-				<table class="unitComparator table-info">  <colgroup span="2" class="columns">
-				</colgroup>
-					<th>(Unit 1)</th>
-					<th>Stat</th>
-					<th>(Unit 2)</th>
-					  <tr>
-						<td>100</td>
-						<td>HP</td>
-						<td>80</td>
-					</tr>
-					<tr>
-						<td>10</td>
-						<td>Attack</td>
-						<td>12</td>
-					</tr>
-					<tr>
-						<td>2.0</td>
-						<td>ROF</td>
-						<td>1.9</td>
-					</tr>
-				</table>
-			
-				<div class= "tableDescription">
-					<p>Acá va algún input para probar casos y los resultados</p>
-					</div>
+	</div>
+</header>
+<h1 class="h1">Make your own matchups</h1>
+<div class= "grid">
+	<nav class="navbar justify-content-center">
+		<ul class= "navbar-nav ">
+			<li class="menuTitle"><p><b>Menu</b></p></li>
+			<li class= "menuItem nav-item">
+				<a class= "menuIndex nav-link" href="./civilizations.html">Civilizations</a>
+			</li>
+			<li class= "menuItem nav-item">
+				<a class= "menuIndex nav-link" href="./units.html">Units</a>
+			</li>
+			<li class= "menuItem nav-item">
+				<a class= "menuIndex nav-link" href="./matchups.html">Matchups</a>
+			</li>
+			<li class= "menuItem nav-item">
+				<a class= "menuIndex nav-link" href="./tests.html">Tests</a>
+			</li>
+		</ul>
+	</nav>
+	<div class= "mainContainer grid_matchups" >
+		<div class="containerCajas">
+			<div class="unitBox1">
+				<h3 class="h3">Unidad 1</h3>
+				<div class= "selectorUnit">
+					<label for="select_unit_1"></label>
+					<select name="select_unit_1" id="select_unit_1">
+						<option value="null"></option>
+						<optgroup label="Generic Melee Units">
+							<option value="Long Swordsman">Long Swordsman</option>
+							<option value="Steppe Lancer">Steppe Lancer</option>
+							<option value="Villager">Villager</option>
+
+
+						</optgroup>
+						<optgroup label="Generic Ranged Units">
+							<option value="Archer">Archer</option>
+							<option value="Hand Cannoneer">Hand Cannoneer</option>
+
+						</optgroup>
+						<optgroup label="Unique Units">
+							<option value="Jaguar Warrior">Jaguar Warrior</option>
+							<option value="Mangudai">Mangudai</option>
+							<option value="Condottiero">Condottiero</option>
+							<option value="Serjeant">Serjeant</option>
+
+
+						</optgroup>    
+					</select>
+				</div>
+				<div id="stats_unit_1">
+					
+				</div>
 			</div>
+		</div>
+		<div class="containerCajas">
+			<div class="unitBox2">
+				<h3 class="h3">Unidad 2</h3>
+				<div class= "selectorUnit">
+					<label for="select_unit_2"></label>
+					<select name="select_unit_2" id="select_unit_2">
+						<option value="null"></option>
+						<optgroup label="Generic Melee Units">
+							<option value="Long Swordsman">Long Swordsman</option>
+							<option value="Steppe Lancer">Steppe Lancer</option>
+							<option value="Villager">Villager</option>
+
+
+						</optgroup>
+						<optgroup label="Generic Ranged Units">
+							<option value="Archer">Archer</option>
+							<option value="Hand Cannoneer">Hand Cannoneer</option>
+
+						</optgroup>
+						<optgroup label="Unique Units">
+							<option value="Jaguar Warrior">Jaguar Warrior</option>
+							<option value="Mangudai">Mangudai</option>
+							<option value="Condottiero">Condottiero</option>
+							<option value="Serjeant">Serjeant</option>
+
+
+						</optgroup>    
+					</select>
+				</div>
+				<div id="stats_unit_2">
+					
+				</div>
 			</div>
+			<div id="selector_units_div">
+				<button id="selector_units_button" >Elegir</button>
+			</div>
+		</div>
+		<div class="containerCajasResults">
+			<div class= "resultBox1">
+				<h3>Resultados</h3>
+				<p id= "p_1"></p><br>
+				<input type="text" id="resultado1" value= "">
+				<button type="button" id= "button1" onclick="updater_input_value('resultado1',bonus(Unidad_1,Unidad_2));reporte_output_pelea(Unidad_1,Unidad_2);">Simular</button>
+			</div>
+			<div class= "reports" id="reportBox1"></div>
+			<div class= "resultBox2">
+				<p id= "p_2"></p><br>
+				<input type="text" id="resultado2" value= "">
+				<button type="button" id= "button2" onclick="updater_input_value('resultado2',bonus(Unidad_2,Unidad_1));reporte_output_pelea(Unidad_1,Unidad_2);">Simular</button>
+				<button id="reset" type="reset" onclick="limpiador();" >Reset</button>
+			</div>
+			<div class= "reports" id="reportBox2"></div>
+		</div>
+	</div>
 	<div class="divFooter">
 		<footer id= "footer">
 			<p><b>Send us an email</b></p>
 			<p><u>Select your country</u></p>
-			<form method="post" action="#header">
-			 <div class="selectTextArea">
-			 	<select name="country">
-				<option value="AR">Argentina</option>
-				<option value="BR">Brasil</option>
-				<option value="ROW">Other</option>
-				</select>
-				<textarea rows="5" cols="40">
-				</textarea>
-			</div>
+			<form  action="../js/contact_info/contact.json" method="post">
+				<div class="selectTextArea">
+					<select name="country">
+						<option value="AR">Argentina</option>
+						<option value="BR">Brasil</option>
+						<option value="ROW">Other</option>
+					</select>
+					<textarea rows="5" cols="40">
+						
+					</textarea>
+				</div>
 				<p><b>Are you a patron/channel member?</b></p>
 				<div id = "ButtonRadius">
-				<div>Yes</div>
-				<input type="radio" name="patron" value="yes" />
-				<div id= "No">No</div>
-				<input type="radio" name="patron" value="no" />
+					<div>Yes</div>
+					<input type="radio" name="patron" value="yes" />
+					<div id= "No">No</div>
+					<input type="radio" name="patron" value="no" />
 				</div>
 				<div id= "Submits">
-				<input type="submit" value="Send"/>
-				<input id="Reset" type="reset" value="Reset"/>
+					<input type="submit" id="send"  value="Send"/>
+					<input id="Reset" type="reset" value="Reset"/>
 				</div>
 			</form>
 		</footer>
 	</div>
-		</body>
-	</html>
+	<script src="../js/clases.js"></script>
+	<script src="../js/unidades.js"></script>
+	<script src="../js/selector.js"></script>
+	<script src="../js/formulas_classes_input.js"></script>
+	<script src="../js/contact.js"></script>
+</body>
+</html>
